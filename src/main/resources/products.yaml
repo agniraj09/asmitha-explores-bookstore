@@ -1,0 +1,314 @@
+products:
+  - id: 1
+    name: "Phonics Flash Cards"
+    description: |
+      <p>Learn alphabets and phonics with our comprehensive flash card set!</p>
+      <ul>
+        <li>Available in Hard & Soft Copy</li>
+        <li>Covers all 26 alphabets</li>
+        <li>Includes 2 short teaching reference videos</li>
+        <li>Cards can be customized based on your requirements</li>
+        <li>Hard Copy & Soft Copy – ₹300</li>
+        <li>Soft Copy (PDF) – ₹50</li>
+      </ul>
+    price: 300
+    currency: "INR"
+    images:
+      - "/images/products/phonics-flash-cards/header.png"
+      - "/images/products/phonics-flash-cards/1.jpg"
+      - "/images/products/phonics-flash-cards/2.jpg"
+      - "/images/products/phonics-flash-cards/3.jpg"
+      - "/images/products/phonics-flash-cards/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Phonics"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Hard Copy"
+    customization:
+      available: true
+      notes: "Cards can be customized based on your requirements"
+    category: "Flash Cards"
+    ageGroup: "1"
+    
+  - id: 2
+    name: "1001 Words in Pictures"
+    description: "A comprehensive picture dictionary for young learners featuring 1001 everyday words with colorful illustrations."
+    price: 239
+    currency: "INR"
+    images:
+      - "/images/products/1001-words/header.jpg"
+      - "/images/products/1001-words/1.jpg"
+      - "/images/products/1001-words/2.jpg"
+      - "/images/products/1001-words/3.jpg"
+      - "/images/products/1001-words/4.jpg"
+    tags:
+      - "Selling Fast"
+      - "Picture Dictionary"
+      - "Vocabulary"
+    stock:
+      status: "IN_STOCK"
+      quantity: 25
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Learning Books"
+    ageGroup: "1"
+
+  - id: 8
+    name: "Having Fun With Phonics"
+    description: "Make phonics learning fun with engaging activities and colorful illustrations."
+    price: 199
+    currency: "INR"
+    images:
+      - "/images/products/having-fun-with-phonics/1.jpg"
+      - "/images/products/having-fun-with-phonics/2.jpg"
+      - "/images/products/having-fun-with-phonics/3.jpg"
+      - "/images/products/having-fun-with-phonics/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Phonics"
+      - "Reading"
+    stock:
+      status: "IN_STOCK"
+      quantity: 40
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Learning Books"
+    ageGroup: "1"
+
+  - id: 3
+    name: "Activity Book - Part A"
+    description: "Engaging activity book with fun exercises to develop cognitive and motor skills."
+    price: 100
+    currency: "INR"
+    images:
+      - "/images/products/activity-book-part-a/1.jpg"
+      - "/images/products/activity-book-part-a/2.jpg"
+      - "/images/products/activity-book-part-a/3.jpg"
+      - "/images/products/activity-book-part-a/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Activity Book"
+      - "Learning"
+    stock:
+      status: "IN_STOCK"
+      quantity: 40
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Learning Books"
+    ageGroup: "1"
+    
+  - id: 7
+    name: "Tamil Letters - உயிரெழுத்துக்கள்"
+    description: "Learn Tamil vowels (உயிரெழுத்துக்கள்) with colorful illustrations and practice exercises."
+    price: 189
+    currency: "INR"
+    images:
+      - "/images/products/tamil-letters/1.jpg"
+      - "/images/products/tamil-letters/2.jpg"
+      - "/images/products/tamil-letters/3.jpg"
+      - "/images/products/tamil-letters/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Tamil"
+      - "Language Learning"
+      - "Vowels"
+    stock:
+      status: "IN_STOCK"
+      quantity: 35
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Learning Books"
+    ageGroup: "1"
+    
+  - id: 9
+    name: "Alphabets Writing Practice"
+    description: "Practice writing all 26 alphabets with guided exercises and tracing activities."
+    price: 189
+    currency: "INR"
+    images:
+      - "/images/products/alphabets-abcd-reusable/1.jpg"
+      - "/images/products/alphabets-abcd-reusable/2.jpg"
+      - "/images/products/alphabets-abcd-reusable/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Writing Practice"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 45
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Learning Books"
+    ageGroup: "1"
+
+  - id: 4
+    name: "Bed Time Story Book - Penguin Theme"
+    description: "Delightful bedtime stories featuring adorable penguin characters to help kids wind down."
+    price: 100
+    currency: "INR"
+    images:
+      - "/images/products/toy-story-books/penguin-1.jpg"
+      - "/images/products/toy-story-books/penguin-2.jpg"
+      - "/images/products/toy-story-books/penguin-3.jpg"
+    tags:
+      - "New Arrival"
+      - "Bedtime Stories"
+      - "Penguin"
+    stock:
+      status: "IN_STOCK"
+      quantity: 30
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Story Books"
+    ageGroup: "1"
+
+  - id: 5
+    name: "Bed Time Story Book - Giraffe Theme"
+    description: "Gentle bedtime stories with giraffe adventures perfect for a peaceful night's sleep."
+    price: 100
+    currency: "INR"
+    images:
+      - "/images/products/toy-story-books/giraffe-1.jpg"
+      - "/images/products/toy-story-books/giraffe-2.jpg"
+      - "/images/products/toy-story-books/giraffe-3.jpg"
+    tags:
+      - "New Arrival"
+      - "Bedtime Stories"
+      - "Giraffe"
+    stock:
+      status: "IN_STOCK"
+      quantity: 30
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Story Books"
+    ageGroup: "1"
+
+  - id: 6
+    name: "Bed Time Story Book - Tiger Theme"
+    description: "Exciting yet soothing bedtime stories featuring brave tiger characters."
+    price: 100
+    currency: "INR"
+    images:
+      - "/images/products/toy-story-books/tiger-1.jpg"
+      - "/images/products/toy-story-books/tiger-2.jpg"
+      - "/images/products/toy-story-books/tiger-3.jpg"
+    tags:
+      - "New Arrival"
+      - "Bedtime Stories"
+      - "Tiger"
+    stock:
+      status: "IN_STOCK"
+      quantity: 30
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Story Books"
+    ageGroup: "1"
+  - id: 10
+    name: "IQ Activity Book - Level 1"
+    description: "Boost cognitive skills with age-appropriate IQ activities and puzzles."
+    price: 229
+    currency: "INR"
+    images:
+      - "/images/products/iq-activity-1/1.jpg"
+      - "/images/products/iq-activity-1/2.jpg"
+      - "/images/products/iq-activity-1/3.jpg"
+      - "/images/products/iq-activity-1/4.jpg"
+      - "/images/products/iq-activity-1/5.jpg"
+    tags:
+      - "New Arrival"
+      - "IQ Activities"
+      - "Brain Development"
+      - "Puzzles"
+    stock:
+      status: "OUT_OF_STOCK"
+      quantity: 0
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Learning Books"
+    ageGroup: "1+ years"
+  
+  - id: 11
+    name: "2 in 1 Writing Board"
+    description: "Dual-sided writing board for practice and creativity - perfect for learning and fun."
+    price: 249
+    currency: "INR"
+    images:
+      - "/images/products/2-in-1-white-board/header.jpg"
+      - "/images/products/2-in-1-white-board/1.jpg"
+      - "/images/products/2-in-1-white-board/2.jpg"
+    tags:
+      - "Selling Fast"
+      - "Writing Board"
+      - "Educational Toy"
+    stock:
+      status: "OUT_OF_STOCK"
+      quantity: 0
+      expectedRestock: "2026-05-01"
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Learning Materials"
+    ageGroup: "1"
+
+# Configuration for future expansion
+metadata:
+  lastUpdated: "2026-04-14"
+  version: "1.0"
+  defaultCurrency: "INR"
+  defaultShippingCharges:
+    withinTamilnadu: 0
+    outsideTamilnadu: 50
+  categories:
+    - "Learning Books"
+    - "Story Books"
+    - "Flash Cards"
+    - "Learning Materials"
+  ageGroups:
+    - "1"
+

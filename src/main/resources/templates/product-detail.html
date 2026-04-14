@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${product.name} + ' - Asmitha Explores'">Product Detail</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>📚 Asmitha Explores</h1>
+                    <p class="tagline">Adventures in Reading!</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <span th:text="${product.name}">Product</span>
+            </div>
+
+            <div class="product-detail-container">
+
+                <!-- ── Image Slider (desktop & mobile) ── -->
+                <div class="product-detail-image">
+                    <div class="image-slider">
+                        <button class="slider-btn slider-prev" onclick="slideImage(-1)" aria-label="Previous">&#8592;</button>
+                        <img id="mainImage"
+                             th:src="${product.imageUrl}"
+                             th:alt="${product.name}"
+                             onerror="this.src='/images/placeholder.jpg'">
+                        <button class="slider-btn slider-next" onclick="slideImage(1)" aria-label="Next">&#8594;</button>
+                    </div>
+
+                    <!-- Dot indicators -->
+                    <div class="slider-dots" id="sliderDots"
+                         th:if="${product.images != null and product.images.size() > 1}"></div>
+
+                    <!-- Hidden image list used by JS to build slider array -->
+                    <div style="display:none" th:if="${product.images != null}">
+                        <span th:each="image : ${product.images}"
+                              class="slider-image-src"
+                              th:data-src="${image}"></span>
+                    </div>
+                </div>
+
+                <!-- ── Product Info ── -->
+                <div class="product-detail-info">
+                    <span class="product-category" th:text="${product.category}">Category</span>
+                    <h1 th:text="${product.name}">Product Name</h1>
+
+                    <div class="price-section">
+                        <span class="price-label">Price</span>
+                        <span class="product-price-large" th:text="'₹' + ${product.formattedPrice}">₹250</span>
+                        <p class="delivery-note">🚚 Delivery charges applicable based on location</p>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-whatsapp-order btn-whatsapp"
+                                th:data-product-name="${product.name}"
+                                th:data-product-price="${product.price}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                            </svg>
+                            Order on WhatsApp
+                        </button>
+                        <button class="btn-back" onclick="window.history.back()">
+                            ← Back
+                        </button>
+                    </div>
+
+                    <div class="product-meta">
+                        <span class="meta-item">
+                            <strong>Age:</strong>
+                            <span th:text="${product.ageRange} + '+'">1+</span>
+                        </span>
+                        <span class="meta-item">
+                            <strong>Category:</strong>
+                            <span th:text="${product.category}">Category</span>
+                        </span>
+                        <span class="meta-item" th:if="${product.inStock}">
+                            <strong>Status:</strong>
+                            <span class="in-stock">✓ In Stock</span>
+                        </span>
+                        <span class="meta-item" th:unless="${product.inStock}">
+                            <strong>Status:</strong>
+                            <span class="out-of-stock">✗ Out of Stock</span>
+                        </span>
+                    </div>
+
+                    <div class="product-detail-description" th:utext="${product.description}">
+                        Description goes here
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixed bottom bar — mobile only, always visible while scrolling -->
+            <div class="mobile-sticky-bar">
+                <div class="mobile-sticky-price">
+                    <span class="mobile-sticky-label">Price</span>
+                    <span class="mobile-sticky-amount" th:text="'₹' + ${product.formattedPrice}">₹250</span>
+                </div>
+                <button class="mobile-sticky-order btn-whatsapp"
+                        th:data-product-name="${product.name}"
+                        th:data-product-price="${product.price}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                    Order on WhatsApp
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>📚 Asmitha Explores</h3>
+                    <p>Inspiring young minds through the magic of reading</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: asmitha.explores@gmail.com</p>
+                    <p>Phone: +919715397125</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Asmitha Explores Bookstore. All rights reserved. Made with ❤️ for young readers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/script.js}"></script>
+    <script>
+        // Build images array from hidden spans
+        const productImages = Array.from(document.querySelectorAll('.slider-image-src'))
+                                   .map(el => el.getAttribute('data-src'))
+                                   .filter(Boolean);
+        if (productImages.length === 0) {
+            const main = document.getElementById('mainImage');
+            if (main && main.src) productImages.push(main.src);
+        }
+
+        let currentIndex = 0;
+
+        // Build dot indicators
+        const dotsContainer = document.getElementById('sliderDots');
+        if (dotsContainer && productImages.length > 1) {
+            productImages.forEach((_, i) => {
+                const dot = document.createElement('span');
+                dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(i);
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        // Show/hide arrows if only 1 image
+        if (productImages.length <= 1) {
+            document.querySelectorAll('.slider-btn').forEach(b => b.style.display = 'none');
+        }
+
+        function goToSlide(index) {
+            if (productImages.length === 0) return;
+            currentIndex = (index + productImages.length) % productImages.length;
+            document.getElementById('mainImage').src = productImages[currentIndex];
+            document.querySelectorAll('.slider-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+        }
+
+        function slideImage(direction) {
+            goToSlide(currentIndex + direction);
+        }
+
+        // WhatsApp button handler
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.btn-whatsapp').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const name  = this.getAttribute('data-product-name');
+                    const price = this.getAttribute('data-product-price');
+                    const msg   = encodeURIComponent(
+                        `Hi! I'm interested in ordering:\n\nProduct: ${name}\nPrice: ₹${price}\n\nPlease let me know about availability and delivery details.`
+                    );
+                    window.open(`https://wa.me/919715397125?text=${msg}`, '_blank');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

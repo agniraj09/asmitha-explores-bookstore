@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmitha Explores Bookstore - Fun Books for Kids!</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>📚 Asmitha Explores</h1>
+                    <p class="tagline">Adventures in Reading!</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section hidden as requested -->
+        <!--
+        <section class="hero hero-compact">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to Asmitha Explores! 🌟</h1>
+                    <p class="hero-subtitle">Discover amazing books that spark imagination and learning!</p>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Our Bookstore Collection</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                    <button class="filter-btn" onclick="filterProducts('Learning Books')">Learning Books</button>
+                    <button class="filter-btn" onclick="filterProducts('Story Books')">Story Books</button>
+                    <button class="filter-btn" onclick="filterProducts('Flash Cards')">Flash Cards</button>
+                    <button class="filter-btn" onclick="filterProducts('Learning Materials')">Learning Materials</button>
+                </div>
+
+                <div class="products-grid">
+                    <div th:each="product : ${products}"
+                         class="product-card clickable-card"
+                         th:data-category="${product.category}"
+                         th:data-product-id="${product.id}">
+                        <div class="product-image">
+                            <img th:src="${product.imageUrl}"
+                                 th:alt="${product.name}"
+                                 onerror="this.src='/images/placeholder.jpg'">
+                            <span class="age-badge" th:text="'Age ' + ${product.ageRange} + '+'">Age 5+</span>
+                            <span th:if="${!product.inStock}" class="out-of-stock-badge">Out of Stock</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category" th:text="${product.category}">Category</span>
+                            <h3 class="product-title" th:text="${product.name}">Product Name</h3>
+                            <p class="product-description" th:text="${product.shortDescription}">Description</p>
+                            <div class="product-footer">
+                                <span class="product-price" th:text="'₹' + ${product.formattedPrice}">₹250</span>
+                                <a th:href="@{/product/{id}(id=${product.id})}" class="btn-details">View & Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container">
+                <h2>Why Choose Asmitha Explores?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Carefully Curated</h3>
+                        <p>Every book is handpicked to ensure quality and age-appropriateness</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💖</div>
+                        <h3>Parent Approved</h3>
+                        <p>Trusted by parents for educational value and entertainment</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Quick shipping to get books into little hands faster</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>asmitha.explores@gmail.com</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>+919715397125</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🕒</div>
+                        <h3>Quick Response</h3>
+                        <p>We respond within 2 hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>📚 Asmitha Explores</h3>
+                    <p>Inspiring young minds through the magic of reading</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: asmitha.explores@gmail.com</p>
+                    <p>Phone: +919715397125</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Asmitha Explores Bookstore. All rights reserved. Made with ❤️ for young readers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
+
