@@ -1,0 +1,8 @@
+# Mark image and binary files so Git handles them correctly
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.gif   binary
+*.ico   binary
+*.svg   text eol=lf
+
