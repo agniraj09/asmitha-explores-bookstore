@@ -117,8 +117,8 @@ products:
     ageGroup: "1"
     
   - id: 7
-    name: "Tamil Letters - உயிரெழுத்துக்கள்"
-    description: "Learn Tamil vowels (உயிரெழுத்துக்கள்) with colorful illustrations and practice exercises."
+    name: "Tamil Letters - உயிர் மெய் எழுத்துக்கள்"
+    description: "Learn Tamil vowels (உயிர் மெய் எழுத்துக்கள்) with colorful illustrations and practice exercises."
     price: 189
     currency: "INR"
     images:

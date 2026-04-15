@@ -2,22 +2,19 @@
 function filterProducts(category) {
     const products = document.querySelectorAll('.product-card');
     const filterButtons = document.querySelectorAll('.filter-btn');
-    
-    // Update active button
+
     filterButtons.forEach(btn => {
         btn.classList.remove('active');
         if (btn.textContent.includes(category) || (category === 'all' && btn.textContent.includes('All'))) {
             btn.classList.add('active');
         }
     });
-    
-    // Filter products
+
     products.forEach(product => {
         const productCategory = product.getAttribute('data-category');
-        
         if (category === 'all' || productCategory === category) {
             product.style.display = 'block';
-            product.style.animation = 'fadeInUp 0.5s';
+            product.style.animation = 'none';
         } else {
             product.style.display = 'none';
         }
@@ -25,95 +22,121 @@ function filterProducts(category) {
 }
 
 // Make product cards clickable
-document.addEventListener('DOMContentLoaded', function() {
-    const productCards = document.querySelectorAll('.clickable-card');
-    
-    productCards.forEach(card => {
-        card.addEventListener('click', function(e) {
-            // Don't navigate if clicking on the Details button
-            if (e.target.classList.contains('btn-details')) {
-                return;
-            }
-            
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.clickable-card').forEach(card => {
+        card.addEventListener('click', function (e) {
+            if (e.target.classList.contains('btn-details') || e.target.closest('.btn-details')) return;
             const productId = this.getAttribute('data-product-id');
-            if (productId) {
-                window.location.href = '/product/' + productId;
-            }
+            if (productId) window.location.href = '/product/' + productId;
         });
     });
 });
 
-// Handle purchase button click
-function handlePurchase() {
-    alert('🎉 Thank you for your interest!\n\nThis is a demo website. To enable real purchases, you would integrate a payment gateway like Stripe, PayPal, or Square.\n\nFor now, enjoy browsing our collection! 📚');
-}
-
-// Smooth scroll for anchor links + highlight Contact nav on click
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        const target = document.querySelector(href);
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-        // If clicking a nav anchor link, mark it active
-        const navLink = document.querySelector(`.nav-links a[href="${href}"]`);
-        if (navLink) {
-            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-            navLink.classList.add('active');
-        }
-    });
-});
-
-// Highlight Contact nav when #contact section scrolls into view
+// ── Nav highlight system ──────────────────────────────────────────
 (function () {
-    const contactSection = document.getElementById('contact');
-    const contactNavLink = document.querySelector('.nav-links a[href="#contact"]');
-    if (!contactSection || !contactNavLink) return;
+    // Sections that have a matching nav anchor on this page
+    const sections = [
+        { id: 'reviews', href: '#reviews' },
+        { id: 'contact', href: '#contact' }
+    ].filter(s => document.getElementById(s.id) !== null);
 
-    // Also activate immediately if page loaded with #contact hash
-    if (window.location.hash === '#contact') {
-        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-        contactNavLink.classList.add('active');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // Helper: offset to scroll to so the section title is clearly visible
+    // (accounts for sticky header height + a small breathing room)
+    function getHeaderOffset() {
+        const header = document.querySelector('header');
+        return header ? header.offsetHeight + 16 : 80;
     }
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-                contactNavLink.classList.add('active');
-            } else {
-                // Remove active only if no other nav link should be active
-                contactNavLink.classList.remove('active');
-                // Re-apply the page-level active link
-                const pageActive = document.querySelector('.nav-links a.page-active');
-                if (pageActive) pageActive.classList.add('active');
-            }
+    // Scroll to section with header offset
+    function scrollToSection(targetEl) {
+        const top = targetEl.getBoundingClientRect().top + window.scrollY - getHeaderOffset();
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+
+    // Set exactly one nav link active
+    function setActive(href) {
+        navLinks.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === href);
         });
-    }, { threshold: 0.2 });
+    }
 
-    observer.observe(contactSection);
+    // Determine which nav link should be active based on scroll position
+    function updateNavOnScroll() {
+        if (sections.length === 0) return;
 
-    // Mark the current page nav link so we can restore it
-    document.querySelectorAll('.nav-links a:not([href="#contact"])').forEach(a => {
-        if (a.classList.contains('active')) {
+        const offset = getHeaderOffset() + 32; // trigger point: just past header
+        const scrollY = window.scrollY;
+        const pageBottom = document.documentElement.scrollHeight - window.innerHeight;
+
+        // If near bottom of page, activate the last anchor section
+        if (scrollY >= pageBottom - 10) {
+            setActive(sections[sections.length - 1].href);
+            return;
+        }
+
+        // Walk sections in reverse: activate the last one whose top is above trigger
+        let active = null;
+        for (let i = sections.length - 1; i >= 0; i--) {
+            const el = document.getElementById(sections[i].id);
+            if (el && el.getBoundingClientRect().top + scrollY <= scrollY + offset) {
+                active = sections[i].href;
+                break;
+            }
+        }
+
+        if (active) {
+            setActive(active);
+        } else {
+            // Above all anchor sections — restore the page-level active link
+            const pageActive = document.querySelector('.nav-links a.page-active');
+            navLinks.forEach(a => a.classList.remove('active'));
+            if (pageActive) pageActive.classList.add('active');
+        }
+    }
+
+    // Anchor click: scroll with offset + set active immediately
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            const target = document.querySelector(href);
+            if (target) scrollToSection(target);
+            // Highlight immediately on click, scroll handler will keep it in sync
+            const navLink = document.querySelector(`.nav-links a[href="${href}"]`);
+            if (navLink) setActive(href);
+        });
+    });
+
+    // Listen to scroll — debounced slightly for performance
+    let scrollTimer;
+    window.addEventListener('scroll', function () {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(updateNavOnScroll, 40);
+    }, { passive: true });
+
+    // Mark the page-level active link (non-anchor, e.g. Home / About)
+    navLinks.forEach(a => {
+        if (a.classList.contains('active') && !a.getAttribute('href').startsWith('#')) {
             a.classList.add('page-active');
         }
     });
+
+    // Handle /#reviews or /#contact on load
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            setTimeout(() => {
+                scrollToSection(target);
+                const navLink = document.querySelector(`.nav-links a[href="${window.location.hash}"]`);
+                if (navLink) setActive(window.location.hash);
+            }, 120);
+        }
+    }
 })();
 
-// Add loading animation
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-        document.body.style.transition = 'opacity 0.5s';
-        document.body.style.opacity = '1';
-    }, 100);
-});
-
-// Console message for developers
+// Console message
 console.log('%c📚 Asmitha Explores Bookstore', 'font-size: 20px; font-weight: bold; color: #4ECDC4;');
 console.log('%cMade with ❤️ for young readers', 'font-size: 14px; color: #FF6B6B;');
-console.log('%cBuilt with Spring Boot, Thymeleaf, and vanilla JavaScript', 'font-size: 12px; color: #7F8C8D;');
 
