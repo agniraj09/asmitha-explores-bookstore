@@ -357,9 +357,21 @@ header {
 
 /* Wrapper clips the scrolling track and adds fade edges */
 .reviews-track-wrapper {
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     position: relative;
     border-radius: 16px;
+    cursor: grab;
+    /* Hide scrollbar but keep scrollability */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.reviews-track-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.reviews-track-wrapper.is-dragging {
+    cursor: grabbing;
+    user-select: none;
 }
 
 .reviews-track-wrapper::before,
