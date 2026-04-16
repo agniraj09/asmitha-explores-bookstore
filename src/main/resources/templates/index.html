@@ -202,12 +202,28 @@
             img.addEventListener('click', function () {
                 document.getElementById('lightboxImg').src = this.src;
                 document.getElementById('reviewLightbox').classList.add('open');
+                // Push a history entry so back button/swipe closes lightbox instead of leaving the page
+                history.pushState({ lightbox: true }, '');
             });
         });
 
         function closeLightbox() {
-            document.getElementById('reviewLightbox').classList.remove('open');
+            const lightbox = document.getElementById('reviewLightbox');
+            if (!lightbox.classList.contains('open')) return;
+            lightbox.classList.remove('open');
+            // If the current history state was pushed for the lightbox, go back to remove it
+            if (history.state && history.state.lightbox) {
+                history.back();
+            }
         }
+
+        // Handle back button / swipe-back: close lightbox instead of navigating away
+        window.addEventListener('popstate', function (e) {
+            const lightbox = document.getElementById('reviewLightbox');
+            if (lightbox.classList.contains('open')) {
+                lightbox.classList.remove('open');
+            }
+        });
 
         // Close on Escape key
         document.addEventListener('keydown', e => {
