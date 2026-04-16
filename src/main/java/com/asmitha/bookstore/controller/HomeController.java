@@ -6,16 +6,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import java.io.File;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+
 @Controller
 public class HomeController {
 
     private final ProductService productService;
+    private final PathMatchingResourcePatternResolver resourceResolver = new PathMatchingResourcePatternResolver();
 
     public HomeController(ProductService productService) {
         this.productService = productService;
@@ -41,21 +45,15 @@ public class HomeController {
         return "about";
     }
 
-    /** Scans static/images/reviews/images at runtime — new images added there appear automatically. */
+    /** Scans static/images/reviews/images at runtime — works both locally and inside a deployed JAR. */
     private List<String> getReviewImages() {
         List<String> paths = new ArrayList<>();
         try {
-            var resource = getClass().getResource("/static/images/reviews/images");
-            if (resource != null) {
-                File dir = new File(resource.toURI());
-                File[] files = dir.listFiles(f ->
-                    f.isFile() && f.getName().matches(".*\\.(jpg|jpeg|png|webp|gif)$")
-                );
-                if (files != null) {
-                    Arrays.sort(files, Comparator.comparing(File::getName));
-                    for (File f : files) {
-                        paths.add("/images/reviews/images/" + f.getName());
-                    }
+            Resource[] resources = resourceResolver.getResources("classpath:/static/images/reviews/images/*.{jpg,jpeg,png,webp,gif}");
+            Arrays.sort(resources, Comparator.comparing(r -> r.getFilename()));
+            for (Resource r : resources) {
+                if (r.getFilename() != null) {
+                    paths.add("/images/reviews/images/" + r.getFilename());
                 }
             }
         } catch (Exception e) {

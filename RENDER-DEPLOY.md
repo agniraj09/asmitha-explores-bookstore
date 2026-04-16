@@ -51,6 +51,17 @@ Your site will be live at: `https://asmitha-explores-bookstore.onrender.com`
 
 ---
 
+## Fixing Missing Images After Deploy
+
+If images show 404 on Render but work locally, the image files are not committed to Git.
+Run these commands to force-add all images:
+
+```bash
+git add -f src/main/resources/static/images/
+git commit -m "Add all product and review images"
+git push origin main
+```
+
 ## Auto-Deploy on Push
 Every time you push to the `main` branch, Render will automatically rebuild and redeploy.
 
