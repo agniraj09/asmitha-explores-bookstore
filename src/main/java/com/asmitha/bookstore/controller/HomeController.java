@@ -6,6 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.http.ResponseEntity;
+
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
@@ -43,6 +46,13 @@ public class HomeController {
     @GetMapping("/about")
     public String about() {
         return "about";
+    }
+
+    // Ping endpoint for uptime monitoring
+    @GetMapping("/ping")
+    @ResponseBody
+    public ResponseEntity<String> ping() {
+        return ResponseEntity.ok("pong");
     }
 
     /** Scans static/images/reviews/images at runtime — works both locally and inside a deployed JAR. */
