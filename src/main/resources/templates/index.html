@@ -85,18 +85,10 @@
         <!-- Customer Reviews Carousel -->
         <section class="reviews-section" id="reviews" th:if="${reviewImages != null and !reviewImages.isEmpty()}">
             <div class="container">
-                <h2 class="section-title">💬 What Parents Say</h2>
-                <p class="reviews-subtitle">Real feedback from happy families 🌟</p>
+                <h2 class="section-title">What Parents Say</h2>
+                <p class="reviews-subtitle">Real feedback from happy moms ❤️</p>
                 <div class="reviews-track-wrapper">
                     <div class="reviews-track" id="reviewsTrack">
-                        <!-- Images duplicated for seamless infinite scroll -->
-                        <img th:each="img : ${reviewImages}"
-                             th:src="${img}"
-                             th:alt="'Customer review'"
-                             class="review-img"
-                             loading="lazy"
-                             onerror="this.style.display='none'">
-                        <!-- Duplicate set for seamless loop -->
                         <img th:each="img : ${reviewImages}"
                              th:src="${img}"
                              th:alt="'Customer review'"
@@ -230,50 +222,13 @@
             if (e.key === 'Escape') closeLightbox();
         });
 
-        // --- Drag / swipe to scroll reviews ---
+        // --- Remove auto-scroll, keep manual scroll, and restore lightbox tap ---
         (function () {
-            const wrapper = document.querySelector('.reviews-track-wrapper');
-            const track   = document.getElementById('reviewsTrack');
-            if (!wrapper || !track) return;
-
-            let isDragging = false;
-            let startX = 0;
-            let scrollStart = 0;
-
-            function pauseAnim()  { track.style.animationPlayState = 'paused'; }
-            function resumeAnim() { track.style.animationPlayState = ''; }
-
-            // Mouse drag
-            wrapper.addEventListener('mousedown', e => {
-                isDragging = true;
-                startX = e.pageX;
-                scrollStart = wrapper.scrollLeft;
-                wrapper.classList.add('is-dragging');
-                pauseAnim();
-            });
-            window.addEventListener('mousemove', e => {
-                if (!isDragging) return;
-                wrapper.scrollLeft = scrollStart - (e.pageX - startX);
-            });
-            window.addEventListener('mouseup', () => {
-                if (!isDragging) return;
-                isDragging = false;
-                wrapper.classList.remove('is-dragging');
-                resumeAnim();
-            });
-
-            // Touch swipe
-            wrapper.addEventListener('touchstart', e => {
-                startX = e.touches[0].pageX;
-                scrollStart = wrapper.scrollLeft;
-                pauseAnim();
-            }, { passive: true });
-            wrapper.addEventListener('touchmove', e => {
-                wrapper.scrollLeft = scrollStart - (e.touches[0].pageX - startX);
-            }, { passive: true });
-            wrapper.addEventListener('touchend', () => {
-                resumeAnim();
-            });
+            // Remove any dynamic duplication of images
+            // (No-op: just don't run the duplicator)
+            // Remove CSS animation class if present
+            const track = document.getElementById('reviewsTrack');
+            if (track) track.classList.remove('is-paused');
         })();
     </script>
 </body>

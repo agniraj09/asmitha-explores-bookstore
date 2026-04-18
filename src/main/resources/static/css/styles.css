@@ -360,6 +360,7 @@ header {
     overflow-x: auto;
     overflow-y: hidden;
     position: relative;
+    -webkit-overflow-scrolling: touch;
     border-radius: 16px;
     cursor: grab;
     /* Hide scrollbar but keep scrollability */
@@ -376,35 +377,22 @@ header {
 
 .reviews-track-wrapper::before,
 .reviews-track-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 80px;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.reviews-track-wrapper::before {
-    left: 0;
-    background: linear-gradient(to right, var(--bg-light), transparent);
-}
-
-.reviews-track-wrapper::after {
-    right: 0;
-    background: linear-gradient(to left, var(--bg-light), transparent);
+    display: none;
 }
 
 /* The scrolling row */
 .reviews-track {
     display: flex;
-    gap: 1rem;
-    width: max-content;
-    animation: reviewsScroll 40s linear infinite;
+    gap: 12px; /* control spacing */
+    width: max-content; /* prevents stretching */
+    scroll-snap-type: x mandatory;
 }
 
 .reviews-track:hover {
-    animation-play-state: paused;
+        animation-play-state: paused;
+        }
+        .reviews-track.is-paused {
+            animation-play-state: paused;
 }
 
 .review-img {
@@ -414,9 +402,10 @@ header {
     border: 1.5px solid #D4A017;
     box-shadow: 0 3px 12px rgba(212, 160, 23, 0.18);
     object-fit: cover;
-    flex-shrink: 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 }
 
 .review-img:hover {
@@ -467,8 +456,6 @@ header {
 @media (max-width: 768px) {
     .review-img { height: 160px; }
     .reviews-track { gap: 0.7rem; }
-    .reviews-track-wrapper::before,
-    .reviews-track-wrapper::after { width: 40px; }
 }
 
 /* About Preview Section */
@@ -672,6 +659,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
+    cursor: grab;
 }
 
 .image-slider img {
@@ -679,6 +667,11 @@ footer {
     height: auto;
     display: block;
     object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-slider:active {
+    cursor: grabbing;
 }
 
 /* Slider arrows - visible on all screen sizes */
@@ -914,7 +907,7 @@ footer {
 .about-hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
-    padding: 4rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -929,7 +922,7 @@ footer {
 }
 
 .about-content {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .about-story {
@@ -941,7 +934,7 @@ footer {
 }
 
 .about-story h2 {
-    color: var(--text-dark);
+    color: #1a252f;
     margin-bottom: 1.5rem;
 }
 
@@ -950,6 +943,11 @@ footer {
     line-height: 1.8;
     margin-bottom: 1rem;
     color: var(--text-light);
+}
+
+.about-content .about-story p {
+    color: #2C3E50;   /* same as var(--text-dark) */
+    font-weight: 400;
 }
 
 .mission-vision {
