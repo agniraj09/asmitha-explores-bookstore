@@ -1,4 +1,36 @@
 products:
+  - id: 11
+    name: "Phonics Flash Cards - Banner"
+    description: |
+      <p>Learn alphabets and phonics with our comprehensive flash card banner!</p>
+      <ul>
+        <li>Size - Width - 3 feet / Height - 4 feet</li>
+        <li>Covers all 26 alphabets</li>
+        <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 699
+    currency: "INR"
+    images:
+      - "/images/products/phonics-flash-cards-banner/1.png"
+      - "/images/products/phonics-flash-cards-banner/2.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Phonics"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: "Cards can be customized based on your requirements"
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: 1
     name: "Phonics Flash Cards"
     description: |

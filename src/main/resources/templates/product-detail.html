@@ -72,7 +72,7 @@
                     <div class="price-section">
                         <span class="price-label">Price</span>
                         <span class="product-price-large" th:text="'₹' + ${product.formattedPrice}">₹250</span>
-                        <p class="delivery-note">🚚 Delivery charges applicable based on location</p>
+                        <p class="delivery-note" th:text="${product.shipping.notes}">🚚 Delivery charges applicable based on location</p>
                     </div>
 
                     <div class="action-buttons">
