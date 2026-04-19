@@ -155,8 +155,16 @@ public class Product {
         this.images = images;
     }
     
-    public String getImageUrl() {
+    /*public String getImageUrl() {
         return (images != null && !images.isEmpty()) ? images.get(0) : "/images/placeholder.jpg";
+    }*/
+    public String getImageUrl() {
+        String baseUrl = "https://asmitha-explores-bookstore.onrender.com";
+
+        if (images != null && !images.isEmpty()) {
+            return baseUrl + images.get(0);
+        }
+        return baseUrl + "/images/placeholder.jpg";
     }
     
     public void setImageUrl(String imageUrl) {
