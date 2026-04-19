@@ -136,7 +136,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })();
 
+
+// Mobile Share Button logic for product-detail page
+document.addEventListener('DOMContentLoaded', function () {
+    const shareBtn = document.getElementById('mobileShareBtn');
+    if (shareBtn) {
+        if (!navigator.share) {
+            shareBtn.style.display = 'none';
+            return;
+        }
+        shareBtn.addEventListener('click', function () {
+            const productName = document.querySelector('.product-detail-info h1')?.textContent?.trim() || document.title;
+            const productDesc = document.querySelector('.product-detail-description')?.textContent?.trim() || '';
+            const url = window.location.href;
+            const shareData = {
+                title: productName,
+                text: productDesc,
+                url: url
+            };
+            navigator.share(shareData).catch(() => {});
+        });
+    }
+});
+
 // Console message
 console.log('%c📚 Asmitha Explores Bookstore', 'font-size: 20px; font-weight: bold; color: #4ECDC4;');
 console.log('%cMade with ❤️ for young readers', 'font-size: 14px; color: #FF6B6B;');
-

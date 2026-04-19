@@ -1249,6 +1249,29 @@ footer {
         background: #1ebe5a;
     }
 
+    .mobile-sticky-share {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        border: 1px solid #f5c2c2;
+
+        background: #fff5f5;   /* soft red background */
+        color: #e63946;        /* main icon color */
+
+        cursor: pointer;
+    }
+
+    .mobile-sticky-share svg {
+        width: 20px;
+        height: 20px;
+    }
+
     /* Add bottom padding so content isn't hidden behind sticky bar */
     .product-detail-container {
         padding-bottom: 80px;
