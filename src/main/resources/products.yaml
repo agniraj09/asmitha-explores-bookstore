@@ -12,7 +12,8 @@ products:
     currency: "INR"
     images:
       - "/images/products/phonics-flash-cards-banner/1.png"
-      - "/images/products/phonics-flash-cards-banner/2.jpg"
+      - "/images/products/phonics-flash-cards-banner/2.png"
+      - "/images/products/phonics-flash-cards-banner/3.png"
     tags:
       - "New Arrival"
       - "Flash Cards"
