@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
-    private Long id;
+    private String id;
     private String name;
     private String description;
     private double price;
@@ -66,7 +66,7 @@ public class Product {
         this.customization = new CustomizationInfo();
     }
     
-    public Product(Long id, String name, String description, double price, 
+    public Product(String id, String name, String description, double price, 
                    String imageUrl, String category, int ageRange, boolean inStock) {
         this();
         this.id = id;
@@ -82,11 +82,11 @@ public class Product {
         this.stock.setQuantity(inStock ? 10 : 0);
     }
     
-    public Long getId() {
+    public String getId() {
         return id;
     }
-    
-    public void setId(Long id) {
+
+    public void setId(String id) {
         this.id = id;
     }
     

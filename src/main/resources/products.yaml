@@ -1,5 +1,5 @@
 products:
-  - id: 11
+  - id: "flash-card-banner"
     name: "Phonics Flash Cards - Banner"
     description: |
       <p>Learn alphabets and phonics with our comprehensive flash card banner!</p>
@@ -8,7 +8,7 @@ products:
         <li>Covers all 26 alphabets</li>
         <li>Made of 1st quality banner material for long lasting usage</li>
       </ul>
-    price: 699
+    price: 750
     currency: "INR"
     images:
       - "/images/products/phonics-flash-cards-banner/1.png"
@@ -31,7 +31,7 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
-  - id: 1
+  - id: "flash-cards"
     name: "Phonics Flash Cards"
     description: |
       <p>Learn alphabets and phonics with our comprehensive flash card set!</p>
@@ -69,7 +69,7 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
     
-  - id: 2
+  - id: "1001-words-in-pictures-book"
     name: "1001 Words in Pictures"
     description: "A comprehensive picture dictionary for young learners featuring 1001 everyday words with colorful illustrations."
     price: 239
@@ -96,7 +96,7 @@ products:
     category: "Learning Books"
     ageGroup: "1"
 
-  - id: 8
+  - id: "having-fun-with-phonics-book"
     name: "Having Fun With Phonics"
     description: "Make phonics learning fun with engaging activities and colorful illustrations."
     price: 199
@@ -122,7 +122,7 @@ products:
     category: "Learning Books"
     ageGroup: "1"
 
-  - id: 3
+  - id: "activity-part-a-book"
     name: "Activity Book - Part A"
     description: "Engaging activity book with fun exercises to develop cognitive and motor skills."
     price: 100
@@ -148,7 +148,7 @@ products:
     category: "Learning Books"
     ageGroup: "1"
     
-  - id: 7
+  - id: "tamil-letters-book"
     name: "Tamil Letters - உயிர் மெய் எழுத்துக்கள்"
     description: "Learn Tamil vowels (உயிர் மெய் எழுத்துக்கள்) with colorful illustrations and practice exercises."
     price: 189
@@ -175,7 +175,7 @@ products:
     category: "Learning Books"
     ageGroup: "1"
     
-  - id: 9
+  - id: "alphabets-writing-practice-book"
     name: "Alphabets Writing Practice"
     description: "Practice writing all 26 alphabets with guided exercises and tracing activities."
     price: 189
@@ -200,7 +200,7 @@ products:
     category: "Learning Books"
     ageGroup: "1"
 
-  - id: 4
+  - id: "bed-time-story-penguin-book"
     name: "Bed Time Story Book - Penguin Theme"
     description: "Delightful bedtime stories featuring adorable penguin characters to help kids wind down."
     price: 100
@@ -225,7 +225,7 @@ products:
     category: "Story Books"
     ageGroup: "1"
 
-  - id: 5
+  - id: "bed-time-story-giraffe-book"
     name: "Bed Time Story Book - Giraffe Theme"
     description: "Gentle bedtime stories with giraffe adventures perfect for a peaceful night's sleep."
     price: 100
@@ -250,7 +250,7 @@ products:
     category: "Story Books"
     ageGroup: "1"
 
-  - id: 6
+  - id: "bed-time-story-tiger-book"
     name: "Bed Time Story Book - Tiger Theme"
     description: "Exciting yet soothing bedtime stories featuring brave tiger characters."
     price: 100
@@ -274,7 +274,8 @@ products:
       available: false
     category: "Story Books"
     ageGroup: "1"
-  - id: 10
+
+  - id: "iq-activity-1"
     name: "IQ Activity Book - Level 1"
     description: "Boost cognitive skills with age-appropriate IQ activities and puzzles."
     price: 229
@@ -302,7 +303,7 @@ products:
     category: "Learning Books"
     ageGroup: "1+ years"
   
-  - id: 11
+  - id: "2-in-1-writing-board"
     name: "2 in 1 Writing Board"
     description: "Dual-sided writing board for practice and creativity - perfect for learning and fun."
     price: 249

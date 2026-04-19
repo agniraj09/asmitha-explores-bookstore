@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title th:text="${product.name} + ' - Asmitha Explores'">Product Detail</title>
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" th:content="${product.name} + ' - Asmitha Explores'" content="Product Detail - Asmitha Explores" />
+    <meta property="og:description" th:content="${product.shortDescription}" content="Fun and educational product for kids!" />
+    <meta property="og:image" th:content="${product.imageUrl}" content="/images/site-files/logo.png" />
+    <meta property="og:url" th:content="@{/product/{id}(id=${product.id})}" content="/" />
+    <meta property="og:type" content="product" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" th:content="${product.name} + ' - Asmitha Explores'" content="Product Detail - Asmitha Explores" />
+    <meta name="twitter:description" th:content="${product.shortDescription}" content="Fun and educational product for kids!" />
+    <meta name="twitter:image" th:content="${product.imageUrl}" content="/images/site-files/logo.png" />
     <link rel="stylesheet" th:href="@{/css/styles.css}">
     <link rel="shortcut icon" type="image/png" th:href="@{/images/site-files/logo.png}">
     <link rel="icon" type="image/png" sizes="32x32" th:href="@{/images/site-files/logo.png}">

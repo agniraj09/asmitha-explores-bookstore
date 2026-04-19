@@ -36,7 +36,7 @@ public class HomeController {
     }
 
     @GetMapping("/product/{id}")
-    public String productDetail(@PathVariable Long id, Model model) {
+    public String productDetail(@PathVariable String id, Model model) {
         productService.getProductById(id).ifPresent(product ->
             model.addAttribute("product", product)
         );

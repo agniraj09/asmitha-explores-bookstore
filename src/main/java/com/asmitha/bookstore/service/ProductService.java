@@ -54,7 +54,7 @@ public class ProductService {
         Product product = new Product();
         
         if (data.get("id") != null) {
-            product.setId(((Number) data.get("id")).longValue());
+            product.setId(data.get("id").toString());
         }
         product.setName((String) data.get("name"));
         product.setDescription((String) data.get("description"));
@@ -114,7 +114,7 @@ public class ProductService {
         return new ArrayList<>(products);
     }
     
-    public Optional<Product> getProductById(Long id) {
+    public Optional<Product> getProductById(String id) {
         return products.stream()
                 .filter(p -> p.getId().equals(id))
                 .findFirst();
@@ -126,16 +126,5 @@ public class ProductService {
                 .toList();
     }
     
-    public void addProduct(Product product) {
-        product.setId(getNextId());
-        products.add(product);
-    }
-    
-    private Long getNextId() {
-        return products.stream()
-                .mapToLong(Product::getId)
-                .max()
-                .orElse(0L) + 1;
-    }
 }
 
