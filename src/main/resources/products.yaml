@@ -41,6 +41,7 @@ products:
         <li>Covers all 26 alphabets</li>
         <li>Includes 2 short teaching reference videos</li>
         <li>Cards can be customized based on your requirements</li>
+        <li>Hard Copy & Soft Copy – ₹320</li>
         <li>Hard Copy & Soft Copy – ₹300</li>
         <li>Soft Copy (PDF) – ₹50</li>
       </ul>
@@ -63,7 +64,7 @@ products:
     shipping:
       applicable: true
       charges: 50
-      notes: "Delivery Charges Applicable for Hard Copy"
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
     customization:
       available: true
       notes: "Cards can be customized based on your requirements"
