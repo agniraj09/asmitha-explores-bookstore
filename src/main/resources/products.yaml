@@ -8,7 +8,7 @@ products:
         <li>Covers all 26 alphabets</li>
         <li>Made of 1st quality banner material for long lasting usage</li>
       </ul>
-    price: 750
+    price: 650
     currency: "INR"
     images:
       - "/images/products/phonics-flash-cards-banner/1.png"
