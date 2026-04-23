@@ -13,7 +13,7 @@ products:
     images:
       - "/images/products/phonics-flash-cards-banner/1.png"
       - "/images/products/phonics-flash-cards-banner/2.png"
-      - "/images/products/phonics-flash-cards-banner/3.jpg"
+      - "/images/products/phonics-flash-cards-banner/3.png"
       - "/images/products/phonics-flash-cards-banner/4.png"
     tags:
       - "New Arrival"
@@ -49,7 +49,7 @@ products:
     price: 300
     currency: "INR"
     images:
-      - "/images/products/phonics-flash-cards/header.png"
+      - "/images/products/phonics-flash-cards/0.png"
       - "/images/products/phonics-flash-cards/1.jpg"
       - "/images/products/phonics-flash-cards/2.jpg"
       - "/images/products/phonics-flash-cards/3.jpg"
@@ -68,7 +68,7 @@ products:
       notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
     customization:
       available: true
-      notes: "Cards can be customized based on your requirements"
+      notes: "Cards can be customized based on your theme - with additional charges"
     category: "Flash Cards"
     ageGroup: "1"
     
