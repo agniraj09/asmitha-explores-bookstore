@@ -4,7 +4,7 @@ products:
     description: |
       <p>Learn alphabets and phonics with our comprehensive flash card banner!</p>
       <ul>
-        <li>Size - Width - 3 feet / Height - 4 feet</li>
+        <li>Size - Width - 2.5 feet(76 cm) / Height - 3.4 feet(102 cm)</li>3' x 4'.png
         <li>Covers all 26 alphabets</li>
         <li>Made of 1st quality banner material for long lasting usage</li>
       </ul>
@@ -14,6 +14,7 @@ products:
       - "/images/products/phonics-flash-cards-banner/1.png"
       - "/images/products/phonics-flash-cards-banner/2.png"
       - "/images/products/phonics-flash-cards-banner/3.jpg"
+      - "/images/products/phonics-flash-cards-banner/4.png"
     tags:
       - "New Arrival"
       - "Flash Cards"
@@ -265,6 +266,31 @@ products:
       - "New Arrival"
       - "Bedtime Stories"
       - "Tiger"
+    stock:
+      status: "IN_STOCK"
+      quantity: 30
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Story Books"
+    ageGroup: "1"
+
+  - id: "bed-time-story-rabbit-book"
+    name: "Bed Time Story Book - Rabbit Theme"
+    description: "Exciting yet soothing bedtime stories featuring cute rabbit characters."
+    price: 100
+    currency: "INR"
+    images:
+      - "/images/products/toy-story-books/rabbit-1.png"
+      - "/images/products/toy-story-books/rabbit-2.png"
+      - "/images/products/toy-story-books/rabbit-3.png"
+    tags:
+      - "New Arrival"
+      - "Bedtime Stories"
+      - "Rabbit"
     stock:
       status: "IN_STOCK"
       quantity: 30
