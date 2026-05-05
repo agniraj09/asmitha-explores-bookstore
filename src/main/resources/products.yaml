@@ -72,6 +72,43 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
     
+  - id: "consonant-flash-cards"
+    name: "Consonant Blending & Diagraph Flash Cards"
+    description: |
+      <p>Master consonant blending and digraph patterns with our comprehensive flash card set!</p>
+      <ul>
+        <li>Available in Hard & Soft Copy</li>
+        <li>Covers consonant blends and digraphs</li>
+        <li>Hard Copy & Soft Copy – ₹400</li>
+        <li>Hard Copy – ₹360</li>
+        <li>Soft Copy (PDF) – ₹50</li>
+      </ul>
+    price: 360
+    currency: "INR"
+    images:
+      - "/images/products/consonant-flash-cards/0.jpg"
+      - "/images/products/consonant-flash-cards/1.jpg"
+      - "/images/products/consonant-flash-cards/2.jpg"
+      - "/images/products/consonant-flash-cards/3.jpg"
+      - "/images/products/consonant-flash-cards/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Phonics"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: ""
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: "1001-words-in-pictures-book"
     name: "1001 Words in Pictures"
     description: "A comprehensive picture dictionary for young learners featuring 1001 everyday words with colorful illustrations."
