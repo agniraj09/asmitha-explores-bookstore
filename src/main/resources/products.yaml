@@ -109,6 +109,7 @@ products:
     name: "Parts of Body Flash Cards"
     description: |
       <p>Learn parts of body with our comprehensive flash card set!</p>
+      <li>20 individual cards</li>
     price: 300
     currency: "INR"
     images:
@@ -141,6 +142,7 @@ products:
       <ul>
         <li>Available in Hard & Soft Copy</li>
         <li>Covers consonant blends and digraphs</li>
+        <li>30 A5 sized cards</li>
         <li>Hard Copy & Soft Copy – ₹400</li>
         <li>Hard Copy – ₹360</li>
         <li>Soft Copy (PDF) – ₹50</li>
