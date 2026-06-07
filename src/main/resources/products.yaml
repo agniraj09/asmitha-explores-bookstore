@@ -1,4 +1,37 @@
 products:
+  - id: "alphabet-picture-flash-cards"
+    name: "Alphabet Picture Flash Cards"
+    description: |
+        <p>Learn alphabets with our comprehensive flash card set!</p>
+        <ul>
+            <li>Size - A4 Sheet Size Per Alphabet</li>
+            <li>Covers all 26 alphabets with corresponding pictures</li>
+        </ul>
+    price: 600
+    currency: "INR"
+    images:
+      - "/images/products/alphabets-picture-cards/0.jpg"
+      - "/images/products/alphabets-picture-cards/1.jpg"
+      - "/images/products/alphabets-picture-cards/2.jpg"
+      - "/images/products/alphabets-picture-cards/3.jpg"
+      - "/images/products/alphabets-picture-cards/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: "Cards can be customized based on your requirements"
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: "flash-card-banner"
     name: "Phonics Flash Cards - Banner"
     description: |
@@ -71,7 +104,36 @@ products:
       notes: "Cards can be customized based on your theme - with additional charges"
     category: "Flash Cards"
     ageGroup: "1"
-    
+
+  - id: "parts-of-body-flash-cards"
+    name: "Parts of Body Flash Cards"
+    description: |
+      <p>Learn parts of body with our comprehensive flash card set!</p>
+    price: 300
+    currency: "INR"
+    images:
+      - "/images/products/parts-of-body/0.jpg"
+      - "/images/products/parts-of-body/1.jpg"
+      - "/images/products/parts-of-body/2.jpg"
+      - "/images/products/parts-of-body/3.jpg"
+      - "/images/products/parts-of-body/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: ""
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: "consonant-flash-cards"
     name: "Consonant Blending & Diagraph Flash Cards"
     description: |
@@ -187,7 +249,7 @@ products:
       available: false
     category: "Learning Books"
     ageGroup: "1"
-    
+
   - id: "tamil-letters-book"
     name: "Tamil Letters - உயிர் மெய் எழுத்துக்கள்"
     description: "Learn Tamil vowels (உயிர் மெய் எழுத்துக்கள்) with colorful illustrations and practice exercises."
@@ -214,7 +276,7 @@ products:
       available: false
     category: "Learning Books"
     ageGroup: "1"
-    
+
   - id: "alphabets-writing-practice-book"
     name: "Alphabets Writing Practice"
     description: "Practice writing all 26 alphabets with guided exercises and tracing activities."
@@ -367,7 +429,7 @@ products:
 #      available: false
 #    category: "Learning Books"
 #    ageGroup: "1+ years"
-  
+
 #  - id: "2-in-1-writing-board"
 #    name: "2 in 1 Writing Board"
 #    description: "Dual-sided writing board for practice and creativity - perfect for learning and fun."
