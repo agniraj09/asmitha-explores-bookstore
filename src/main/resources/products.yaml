@@ -44,9 +44,9 @@ products:
     price: 650
     currency: "INR"
     images:
-      - "/images/products/phonics-flash-cards-banner/1.png"
+      - "/images/products/phonics-flash-cards-banner/1.jpg"
       - "/images/products/phonics-flash-cards-banner/2.png"
-      - "/images/products/phonics-flash-cards-banner/3.png"
+      - "/images/products/phonics-flash-cards-banner/3.jpg"
       - "/images/products/phonics-flash-cards-banner/4.png"
     tags:
       - "New Arrival"
@@ -71,22 +71,21 @@ products:
     description: |
       <p>Learn alphabets and phonics with our comprehensive flash card set!</p>
       <ul>
-        <li>Available in Hard & Soft Copy</li>
+        <li>Available in Hard Copy</li>
         <li>Covers all 26 alphabets</li>
         <li>Includes 2 short teaching reference videos</li>
         <li>Cards can be customized based on your theme - with additional charges</li>
-        <li>Hard Copy & Soft Copy – ₹320</li>
         <li>Hard Copy – ₹300</li>
-        <li>Soft Copy (PDF) – ₹50</li>
       </ul>
     price: 300
     currency: "INR"
     images:
-      - "/images/products/phonics-flash-cards/0.png"
+      - "/images/products/phonics-flash-cards/0.jpg"
       - "/images/products/phonics-flash-cards/1.jpg"
       - "/images/products/phonics-flash-cards/2.jpg"
       - "/images/products/phonics-flash-cards/3.jpg"
       - "/images/products/phonics-flash-cards/4.jpg"
+      - "/images/products/phonics-flash-cards/5.jpg"
     tags:
       - "New Arrival"
       - "Flash Cards"
@@ -140,12 +139,10 @@ products:
     description: |
       <p>Master consonant blending and digraph patterns with our comprehensive flash card set!</p>
       <ul>
-        <li>Available in Hard & Soft Copy</li>
+        <li>Available in Hard Copy</li>
         <li>Covers consonant blends and digraphs</li>
         <li>30 A5 sized cards</li>
-        <li>Hard Copy & Soft Copy – ₹400</li>
         <li>Hard Copy – ₹360</li>
-        <li>Soft Copy (PDF) – ₹50</li>
       </ul>
     price: 360
     currency: "INR"
