@@ -104,6 +104,38 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
+  - id: "tamil-mei-eluthukkal-flash-cards"
+    name: "Tamil Mei Eluthukkal Flash Cards"
+    description: |
+      <p>Learn Tamil vowels (மெய் எழுத்துக்கள்) with our comprehensive flash card set!</p>
+      <ul>
+        <li>Available in Hard Copy</li>
+        <li>Covers all 18 alphabets</li>
+        <li>Hard Copy – ₹300</li>
+      </ul>
+    price: 300
+    currency: "INR"
+    images:
+      - "/images/products/tamil-mei-eluthukkal/1.jpg"
+      - "/images/products/tamil-mei-eluthukkal/2.jpg"
+      - "/images/products/tamil-mei-eluthukkal/3.jpg"
+      - "/images/products/tamil-mei-eluthukkal/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Tamil"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: "parts-of-body-flash-cards"
     name: "Parts of Body Flash Cards"
     description: |
@@ -153,7 +185,6 @@ products:
       - "/images/products/consonant-flash-cards/3.jpg"
       - "/images/products/consonant-flash-cards/4.jpg"
     tags:
-      - "New Arrival"
       - "Flash Cards"
       - "Phonics"
       - "Alphabets"
@@ -208,7 +239,6 @@ products:
       - "/images/products/having-fun-with-phonics/3.jpg"
       - "/images/products/having-fun-with-phonics/4.jpg"
     tags:
-      - "New Arrival"
       - "Phonics"
       - "Reading"
     stock:
@@ -260,7 +290,6 @@ products:
       - "/images/products/tamil-letters/3.jpg"
       - "/images/products/tamil-letters/4.jpg"
     tags:
-      - "New Arrival"
       - "Tamil"
       - "Language Learning"
       - "Vowels"
@@ -311,7 +340,6 @@ products:
       - "/images/products/toy-story-books/penguin-2.jpg"
       - "/images/products/toy-story-books/penguin-3.jpg"
     tags:
-      - "New Arrival"
       - "Bedtime Stories"
       - "Penguin"
     stock:
@@ -336,7 +364,6 @@ products:
       - "/images/products/toy-story-books/giraffe-2.jpg"
       - "/images/products/toy-story-books/giraffe-3.jpg"
     tags:
-      - "New Arrival"
       - "Bedtime Stories"
       - "Giraffe"
     stock:
@@ -351,30 +378,30 @@ products:
     category: "Story Books"
     ageGroup: "1"
 
-  - id: "bed-time-story-tiger-book"
-    name: "Bed Time Story Book - Tiger Theme"
-    description: "Exciting yet soothing bedtime stories featuring brave tiger characters."
-    price: 100
-    currency: "INR"
-    images:
-      - "/images/products/toy-story-books/tiger-1.jpg"
-      - "/images/products/toy-story-books/tiger-2.jpg"
-      - "/images/products/toy-story-books/tiger-3.jpg"
-    tags:
-      - "New Arrival"
-      - "Bedtime Stories"
-      - "Tiger"
-    stock:
-      status: "IN_STOCK"
-      quantity: 30
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-    customization:
-      available: false
-    category: "Story Books"
-    ageGroup: "1"
+#  - id: "bed-time-story-tiger-book"
+#    name: "Bed Time Story Book - Tiger Theme"
+#    description: "Exciting yet soothing bedtime stories featuring brave tiger characters."
+#    price: 100
+#    currency: "INR"
+#    images:
+#      - "/images/products/toy-story-books/tiger-1.jpg"
+#      - "/images/products/toy-story-books/tiger-2.jpg"
+#      - "/images/products/toy-story-books/tiger-3.jpg"
+#    tags:
+#      - "New Arrival"
+#      - "Bedtime Stories"
+#      - "Tiger"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 30
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Story Books"
+#    ageGroup: "1"
 
   - id: "bed-time-story-rabbit-book"
     name: "Bed Time Story Book - Rabbit Theme"
