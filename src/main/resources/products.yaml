@@ -50,9 +50,9 @@ products:
       - "/images/products/phonics-flash-cards-banner/4.png"
     tags:
       - "New Arrival"
-      - "Flash Cards"
       - "Phonics"
       - "Alphabets"
+      - "Banner"
     stock:
       status: "IN_STOCK"
       quantity: 50
@@ -61,9 +61,38 @@ products:
       charges: 50
       notes: "Delivery Charges Applicable Outside Tamilnadu"
     customization:
-      available: true
-      notes: "Cards can be customized based on your requirements"
-    category: "Flash Cards"
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
+  - id: "jolly-phonics-banner"
+    name: "Jolly Phonics - Banner"
+    description: |
+      <p>Learn alphabets and phonics with our comprehensive Jolly Phonics banner!</p>
+      <ul>
+        <li>Size - Width - 3.4 feet(102 cm) / Height - 2.9 feet(89 cm)</li>
+        <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 680
+    currency: "INR"
+    images:
+      - "/images/products/jolly-phonics-banner/1.jpg"
+      - "/images/products/jolly-phonics-banner/2.png"
+      - "/images/products/jolly-phonics-banner/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Phonics"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
     ageGroup: "1"
 
   - id: "flash-cards"
@@ -201,32 +230,32 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
-  - id: "1001-words-in-pictures-book"
-    name: "1001 Words in Pictures"
-    description: "A comprehensive picture dictionary for young learners featuring 1001 everyday words with colorful illustrations."
-    price: 239
-    currency: "INR"
-    images:
-      - "/images/products/1001-words/header.jpg"
-      - "/images/products/1001-words/1.jpg"
-      - "/images/products/1001-words/2.jpg"
-      - "/images/products/1001-words/3.jpg"
-      - "/images/products/1001-words/4.jpg"
-    tags:
-      - "Selling Fast"
-      - "Picture Dictionary"
-      - "Vocabulary"
-    stock:
-      status: "IN_STOCK"
-      quantity: 25
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-    customization:
-      available: false
-    category: "Learning Books"
-    ageGroup: "1"
+#  - id: "1001-words-in-pictures-book"
+#    name: "1001 Words in Pictures"
+#    description: "A comprehensive picture dictionary for young learners featuring 1001 everyday words with colorful illustrations."
+#    price: 239
+#    currency: "INR"
+#    images:
+#      - "/images/products/1001-words/header.jpg"
+#      - "/images/products/1001-words/1.jpg"
+#      - "/images/products/1001-words/2.jpg"
+#      - "/images/products/1001-words/3.jpg"
+#      - "/images/products/1001-words/4.jpg"
+#    tags:
+#      - "Selling Fast"
+#      - "Picture Dictionary"
+#      - "Vocabulary"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 25
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Learning Books"
+#    ageGroup: "1"
 
   - id: "having-fun-with-phonics-book"
     name: "Having Fun With Phonics"
@@ -253,31 +282,31 @@ products:
     category: "Learning Books"
     ageGroup: "1"
 
-  - id: "activity-part-a-book"
-    name: "Activity Book - Part A"
-    description: "Engaging activity book with fun exercises to develop cognitive and motor skills."
-    price: 100
-    currency: "INR"
-    images:
-      - "/images/products/activity-book-part-a/1.jpg"
-      - "/images/products/activity-book-part-a/2.jpg"
-      - "/images/products/activity-book-part-a/3.jpg"
-      - "/images/products/activity-book-part-a/4.jpg"
-    tags:
-      - "New Arrival"
-      - "Activity Book"
-      - "Learning"
-    stock:
-      status: "IN_STOCK"
-      quantity: 40
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-    customization:
-      available: false
-    category: "Learning Books"
-    ageGroup: "1"
+#  - id: "activity-part-a-book"
+#    name: "Activity Book - Part A"
+#    description: "Engaging activity book with fun exercises to develop cognitive and motor skills."
+#    price: 100
+#    currency: "INR"
+#    images:
+#      - "/images/products/activity-book-part-a/1.jpg"
+#      - "/images/products/activity-book-part-a/2.jpg"
+#      - "/images/products/activity-book-part-a/3.jpg"
+#      - "/images/products/activity-book-part-a/4.jpg"
+#    tags:
+#      - "New Arrival"
+#      - "Activity Book"
+#      - "Learning"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 40
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Learning Books"
+#    ageGroup: "1"
 
   - id: "tamil-letters-book"
     name: "Tamil Letters - உயிர் மெய் எழுத்துக்கள்"
@@ -494,7 +523,7 @@ metadata:
     - "Learning Books"
     - "Story Books"
     - "Flash Cards"
-    - "Learning Materials"
+    - "Banners"
   ageGroups:
     - "1"
 
