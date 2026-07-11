@@ -74,7 +74,7 @@
                             <img th:src="${product.imageUrl}"
                                  th:alt="${product.name}"
                                  onerror="this.src='/images/placeholder.jpg'">
-                            <span class="age-badge" th:text="'Age ' + ${product.ageRange} + '+'">Age 5+</span>
+                            <!--<span class="age-badge" th:text="'Age ' + ${product.ageRange} + '+'">Age 5+</span>-->
                             <span th:if="${!product.inStock}" class="out-of-stock-badge">Out of Stock</span>
                         </div>
                         <div class="product-info">
