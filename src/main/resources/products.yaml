@@ -1,37 +1,4 @@
 products:
-  - id: "alphabet-picture-flash-cards"
-    name: "Alphabet Picture Flash Cards"
-    description: |
-        <p>Learn alphabets with our comprehensive flash card set!</p>
-        <ul>
-            <li>Size - A4 Sheet Size Per Alphabet</li>
-            <li>Covers all 26 alphabets with corresponding pictures</li>
-        </ul>
-    price: 600
-    currency: "INR"
-    images:
-      - "/images/products/alphabets-picture-cards/0.jpg"
-      - "/images/products/alphabets-picture-cards/1.jpg"
-      - "/images/products/alphabets-picture-cards/2.jpg"
-      - "/images/products/alphabets-picture-cards/3.jpg"
-      - "/images/products/alphabets-picture-cards/4.jpg"
-    tags:
-      - "New Arrival"
-      - "Flash Cards"
-      - "Alphabets"
-    stock:
-      status: "IN_STOCK"
-      quantity: 50
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable Outside Tamilnadu"
-    customization:
-      available: true
-      notes: "Cards can be customized based on your requirements"
-    category: "Flash Cards"
-    ageGroup: "1"
-
   - id: "flash-card-banner"
     name: "Phonics Flash Cards - Banner"
     description: |
@@ -95,6 +62,39 @@ products:
     category: "Banners"
     ageGroup: "1"
 
+  - id: "alphabet-picture-flash-cards"
+    name: "Alphabet Picture Flash Cards"
+    description: |
+      <p>Learn alphabets with our comprehensive flash card set!</p>
+      <ul>
+          <li>Size - A4 Sheet Size Per Alphabet</li>
+          <li>Covers all 26 alphabets with corresponding pictures</li>
+      </ul>
+    price: 600
+    currency: "INR"
+    images:
+      - "/images/products/alphabets-picture-cards/0.jpg"
+      - "/images/products/alphabets-picture-cards/1.jpg"
+      - "/images/products/alphabets-picture-cards/2.jpg"
+      - "/images/products/alphabets-picture-cards/3.jpg"
+      - "/images/products/alphabets-picture-cards/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: "Cards can be customized based on your requirements"
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: "flash-cards"
     name: "Phonics Flash Cards"
     description: |
@@ -140,9 +140,8 @@ products:
       <ul>
         <li>Available in Hard Copy</li>
         <li>Covers all 18 alphabets</li>
-        <li>Hard Copy – ₹300</li>
       </ul>
-    price: 300
+    price: 280
     currency: "INR"
     images:
       - "/images/products/tamil-mei-eluthukkal/1.jpg"
@@ -230,33 +229,6 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
-#  - id: "1001-words-in-pictures-book"
-#    name: "1001 Words in Pictures"
-#    description: "A comprehensive picture dictionary for young learners featuring 1001 everyday words with colorful illustrations."
-#    price: 239
-#    currency: "INR"
-#    images:
-#      - "/images/products/1001-words/header.jpg"
-#      - "/images/products/1001-words/1.jpg"
-#      - "/images/products/1001-words/2.jpg"
-#      - "/images/products/1001-words/3.jpg"
-#      - "/images/products/1001-words/4.jpg"
-#    tags:
-#      - "Selling Fast"
-#      - "Picture Dictionary"
-#      - "Vocabulary"
-#    stock:
-#      status: "IN_STOCK"
-#      quantity: 25
-#    shipping:
-#      applicable: true
-#      charges: 50
-#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-#    customization:
-#      available: false
-#    category: "Learning Books"
-#    ageGroup: "1"
-
   - id: "having-fun-with-phonics-book"
     name: "Having Fun With Phonics"
     description: "Make phonics learning fun with engaging activities and colorful illustrations."
@@ -281,32 +253,6 @@ products:
       available: false
     category: "Learning Books"
     ageGroup: "1"
-
-#  - id: "activity-part-a-book"
-#    name: "Activity Book - Part A"
-#    description: "Engaging activity book with fun exercises to develop cognitive and motor skills."
-#    price: 100
-#    currency: "INR"
-#    images:
-#      - "/images/products/activity-book-part-a/1.jpg"
-#      - "/images/products/activity-book-part-a/2.jpg"
-#      - "/images/products/activity-book-part-a/3.jpg"
-#      - "/images/products/activity-book-part-a/4.jpg"
-#    tags:
-#      - "New Arrival"
-#      - "Activity Book"
-#      - "Learning"
-#    stock:
-#      status: "IN_STOCK"
-#      quantity: 40
-#    shipping:
-#      applicable: true
-#      charges: 50
-#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-#    customization:
-#      available: false
-#    category: "Learning Books"
-#    ageGroup: "1"
 
   - id: "tamil-letters-book"
     name: "Tamil Letters - உயிர் மெய் எழுத்துக்கள்"
@@ -407,31 +353,6 @@ products:
     category: "Story Books"
     ageGroup: "1"
 
-#  - id: "bed-time-story-tiger-book"
-#    name: "Bed Time Story Book - Tiger Theme"
-#    description: "Exciting yet soothing bedtime stories featuring brave tiger characters."
-#    price: 100
-#    currency: "INR"
-#    images:
-#      - "/images/products/toy-story-books/tiger-1.jpg"
-#      - "/images/products/toy-story-books/tiger-2.jpg"
-#      - "/images/products/toy-story-books/tiger-3.jpg"
-#    tags:
-#      - "New Arrival"
-#      - "Bedtime Stories"
-#      - "Tiger"
-#    stock:
-#      status: "IN_STOCK"
-#      quantity: 30
-#    shipping:
-#      applicable: true
-#      charges: 50
-#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-#    customization:
-#      available: false
-#    category: "Story Books"
-#    ageGroup: "1"
-
   - id: "bed-time-story-rabbit-book"
     name: "Bed Time Story Book - Rabbit Theme"
     description: "Exciting yet soothing bedtime stories featuring cute rabbit characters."
@@ -456,6 +377,84 @@ products:
       available: false
     category: "Story Books"
     ageGroup: "1"
+
+#  - id: "1001-words-in-pictures-book"
+#    name: "1001 Words in Pictures"
+#    description: "A comprehensive picture dictionary for young learners featuring 1001 everyday words with colorful illustrations."
+#    price: 239
+#    currency: "INR"
+#    images:
+#      - "/images/products/1001-words/header.jpg"
+#      - "/images/products/1001-words/1.jpg"
+#      - "/images/products/1001-words/2.jpg"
+#      - "/images/products/1001-words/3.jpg"
+#      - "/images/products/1001-words/4.jpg"
+#    tags:
+#      - "Selling Fast"
+#      - "Picture Dictionary"
+#      - "Vocabulary"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 25
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Learning Books"
+#    ageGroup: "1"
+
+#  - id: "activity-part-a-book"
+#    name: "Activity Book - Part A"
+#    description: "Engaging activity book with fun exercises to develop cognitive and motor skills."
+#    price: 100
+#    currency: "INR"
+#    images:
+#      - "/images/products/activity-book-part-a/1.jpg"
+#      - "/images/products/activity-book-part-a/2.jpg"
+#      - "/images/products/activity-book-part-a/3.jpg"
+#      - "/images/products/activity-book-part-a/4.jpg"
+#    tags:
+#      - "New Arrival"
+#      - "Activity Book"
+#      - "Learning"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 40
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Learning Books"
+#    ageGroup: "1"
+
+#  - id: "bed-time-story-tiger-book"
+#    name: "Bed Time Story Book - Tiger Theme"
+#    description: "Exciting yet soothing bedtime stories featuring brave tiger characters."
+#    price: 100
+#    currency: "INR"
+#    images:
+#      - "/images/products/toy-story-books/tiger-1.jpg"
+#      - "/images/products/toy-story-books/tiger-2.jpg"
+#      - "/images/products/toy-story-books/tiger-3.jpg"
+#    tags:
+#      - "New Arrival"
+#      - "Bedtime Stories"
+#      - "Tiger"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 30
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Story Books"
+#    ageGroup: "1"
 
 #  - id: "iq-activity-1"
 #    name: "IQ Activity Book - Level 1"
@@ -520,10 +519,10 @@ metadata:
     withinTamilnadu: 0
     outsideTamilnadu: 50
   categories:
-    - "Learning Books"
-    - "Story Books"
     - "Flash Cards"
     - "Banners"
+    - "Learning Books"
+    - "Story Books"
   ageGroups:
     - "1"
 
