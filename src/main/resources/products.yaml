@@ -44,7 +44,7 @@ products:
     currency: "INR"
     images:
       - "/images/products/jolly-phonics-banner/1.jpg"
-      - "/images/products/jolly-phonics-banner/2.png"
+      - "/images/products/jolly-phonics-banner/2.jpg"
       - "/images/products/jolly-phonics-banner/3.jpg"
     tags:
       - "New Arrival"
@@ -104,7 +104,6 @@ products:
         <li>Covers all 26 alphabets</li>
         <li>Includes 2 short teaching reference videos</li>
         <li>Cards can be customized based on your theme - with additional charges</li>
-        <li>Hard Copy – ₹300</li>
       </ul>
     price: 300
     currency: "INR"
@@ -202,7 +201,6 @@ products:
         <li>Available in Hard Copy</li>
         <li>Covers consonant blends and digraphs</li>
         <li>30 A5 sized cards</li>
-        <li>Hard Copy – ₹360</li>
       </ul>
     price: 360
     currency: "INR"
