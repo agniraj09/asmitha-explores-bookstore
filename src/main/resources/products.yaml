@@ -132,21 +132,22 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
-  - id: "tamil-mei-eluthukkal-flash-cards"
-    name: "Tamil Mei Eluthukkal Flash Cards"
+  - id: "tamil-uyir-eluthukkal-flash-cards"
+    name: "Tamil Uyir Eluthukkal Flash Cards"
     description: |
-      <p>Learn Tamil vowels (மெய் எழுத்துக்கள்) with our comprehensive flash card set!</p>
+      <p>Learn Tamil vowels (உயிர் எழுத்துக்கள்) with our comprehensive flash card set!</p>
       <ul>
         <li>Available in Hard Copy</li>
-        <li>Covers all 18 alphabets</li>
+        <li>Covers all 12 alphabets</li>
       </ul>
-    price: 280
+    price: 220
     currency: "INR"
     images:
-      - "/images/products/tamil-mei-eluthukkal/1.jpg"
-      - "/images/products/tamil-mei-eluthukkal/2.jpg"
-      - "/images/products/tamil-mei-eluthukkal/3.jpg"
-      - "/images/products/tamil-mei-eluthukkal/4.jpg"
+      - "/images/products/tamil-uyir-eluthukkal/1.jpg"
+      - "/images/products/tamil-uyir-eluthukkal/2.jpg"
+      - "/images/products/tamil-uyir-eluthukkal/3.jpg"
+      - "/images/products/tamil-uyir-eluthukkal/4.jpg"
+      - "/images/products/tamil-uyir-eluthukkal/5.jpg"
     tags:
       - "New Arrival"
       - "Flash Cards"
@@ -163,21 +164,21 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
-  - id: "tamil-uyir-eluthukkal-flash-cards"
-    name: "Tamil Uyir Eluthukkal Flash Cards"
+  - id: "tamil-mei-eluthukkal-flash-cards"
+    name: "Tamil Mei Eluthukkal Flash Cards"
     description: |
-      <p>Learn Tamil vowels (உயிர் எழுத்துக்கள்) with our comprehensive flash card set!</p>
+      <p>Learn Tamil vowels (மெய் எழுத்துக்கள்) with our comprehensive flash card set!</p>
       <ul>
         <li>Available in Hard Copy</li>
-        <li>Covers all 12 alphabets</li>
+        <li>Covers all 18 alphabets</li>
       </ul>
-    price: 220
+    price: 280
     currency: "INR"
     images:
-      - "/images/products/tamil-uyir-eluthukkal/1.jpg"
-      - "/images/products/tamil-uyir-eluthukkal/2.jpg"
-      - "/images/products/tamil-uyir-eluthukkal/3.jpg"
-      - "/images/products/tamil-uyir-eluthukkal/4.jpg"
+      - "/images/products/tamil-mei-eluthukkal/1.jpg"
+      - "/images/products/tamil-mei-eluthukkal/2.jpg"
+      - "/images/products/tamil-mei-eluthukkal/3.jpg"
+      - "/images/products/tamil-mei-eluthukkal/4.jpg"
     tags:
       - "New Arrival"
       - "Flash Cards"
