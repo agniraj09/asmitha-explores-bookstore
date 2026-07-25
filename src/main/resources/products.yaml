@@ -62,6 +62,36 @@ products:
     category: "Banners"
     ageGroup: "1"
 
+  - id: "numbers-tamil-banner"
+    name: "Numbers & Tamil Names - Banner"
+    description: |
+        <p>Learn numbers and their Tamil names with our high quality banner!</p>
+        <ul>
+            <li>Size - Width - 4.2 feet(127 cm) / Height - 2.9 feet(89 cm)</li>
+            <li>Made of 1st quality banner material for long lasting usage</li>
+        </ul>
+    price: 850
+    currency: "INR"
+    images:
+      - "/images/products/numbers-tamil-names-banner/1.jpg"
+      - "/images/products/numbers-tamil-names-banner/2.jpg"
+      - "/images/products/numbers-tamil-names-banner/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Numbers"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
   - id: "alphabet-picture-flash-cards"
     name: "Alphabet Picture Flash Cards"
     description: |
@@ -192,6 +222,90 @@ products:
       notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
     customization:
       available: true
+    category: "Flash Cards"
+    ageGroup: "1"
+
+  - id: "wild-domestic-animals-flash-cards"
+    name: "Wild & Domestic Animals Flash Cards"
+    description: |
+      <p>Learn wild and domestic animals with our comprehensive flash card set!</p>
+      <li>30 individual cards</li>
+    price: 360
+    currency: "INR"
+    images:
+      - "/images/products/wild-domestic-animals/1.jpg"
+      - "/images/products/wild-domestic-animals/2.jpg"
+      - "/images/products/wild-domestic-animals/3.jpg"
+      - "/images/products/wild-domestic-animals/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: ""
+    category: "Flash Cards"
+    ageGroup: "1"
+
+  - id: "birds-flash-cards"
+    name: "Birds Flash Cards"
+    description: |
+      <p>Learn birds with our comprehensive flash card set!</p>
+      <li>20 individual cards</li>
+    price: 250
+    currency: "INR"
+    images:
+      - "/images/products/birds-flash-cards/1.jpg"
+      - "/images/products/birds-flash-cards/2.jpg"
+      - "/images/products/birds-flash-cards/3.jpg"
+      - "/images/products/birds-flash-cards/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: ""
+    category: "Flash Cards"
+    ageGroup: "1"
+
+  - id: "flowers-flash-cards"
+    name: "Flowers Flash Cards"
+    description: |
+      <p>Learn flowers with our comprehensive flash card set!</p>
+      <li>12 individual cards</li>
+    price: 180
+    currency: "INR"
+    images:
+      - "/images/products/flowers-flash-cards/1.jpg"
+      - "/images/products/flowers-flash-cards/2.jpg"
+      - "/images/products/flowers-flash-cards/3.jpg"
+      - "/images/products/flowers-flash-cards/4.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: ""
     category: "Flash Cards"
     ageGroup: "1"
 
