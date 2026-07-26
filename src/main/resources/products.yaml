@@ -309,6 +309,34 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
+  - id: "flags-flash-cards"
+    name: "Flags Flash Cards A to Z"
+    description: |
+      <p>Learn flags of countries with our comprehensive flash card set!</p>
+      <li>26 individual cards</li>
+    price: 320
+    currency: "INR"
+    images:
+      - "/images/products/flags-flash-cards/1.jpg"
+      - "/images/products/flags-flash-cards/2.jpg"
+      - "/images/products/flags-flash-cards/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Alphabets"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+      notes: ""
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: "parts-of-body-flash-cards"
     name: "Parts of Body Flash Cards"
     description: |
