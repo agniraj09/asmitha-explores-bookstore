@@ -1,4 +1,34 @@
 products:
+  - id: "uyir-mei-eluthukkal-banner"
+    name: "Tamil Uyir Mei Eluthukkal - Banner"
+    description: |
+      <p>Learn Tamil Uyir & Mei Eluthukkal with our comprehensive banner!</p>
+      <ul>
+        <li>Size - Width - 2.5 feet(76 cm) / Height - 3.4 feet(102 cm)</li>
+        <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 650
+    currency: "INR"
+    images:
+      - "/images/products/uyir-mei-eluthukkal-banner/1.jpg"
+      - "/images/products/uyir-mei-eluthukkal-banner/2.jpg"
+      - "/images/products/uyir-mei-eluthukkal-banner/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Tamil"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
   - id: "flash-card-banner"
     name: "Phonics Flash Cards - Banner"
     description: |
