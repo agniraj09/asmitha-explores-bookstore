@@ -92,8 +92,38 @@ products:
     category: "Banners"
     ageGroup: "1"
 
-  - id: "numbers-tamil-banner"
-    name: "Numbers & Tamil Names - Banner"
+  - id: "numbers-banner-1-50"
+    name: "Numbers - Banner 1 to 50"
+    description: |
+      <p>Learn numbers and their English & Tamil names with our high quality banner!</p>
+      <ul>
+          <li>Size - Width - 3.4 feet(102 cm) / Height - 2.5 feet(76 cm)</li>
+          <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 850
+    currency: "INR"
+    images:
+      - "/images/products/numbers-banner-1-to-50/1.jpg"
+      - "/images/products/numbers-banner-1-to-50/2.jpg"
+      - "/images/products/numbers-banner-1-to-50/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Numbers"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
+  - id: "numbers-tamil-banner-1-100"
+    name: "Numbers & Tamil Names - Banner  1 to 100"
     description: |
         <p>Learn numbers and their Tamil names with our high quality banner!</p>
         <ul>
@@ -103,9 +133,9 @@ products:
     price: 850
     currency: "INR"
     images:
-      - "/images/products/numbers-tamil-names-banner/1.jpg"
-      - "/images/products/numbers-tamil-names-banner/2.jpg"
-      - "/images/products/numbers-tamil-names-banner/3.jpg"
+      - "/images/products/numbers-tamil-names-banner-1-to-100/1.jpg"
+      - "/images/products/numbers-tamil-names-banner-1-to-100/2.jpg"
+      - "/images/products/numbers-tamil-names-banner-1-to-100/3.jpg"
     tags:
       - "New Arrival"
       - "Numbers"
