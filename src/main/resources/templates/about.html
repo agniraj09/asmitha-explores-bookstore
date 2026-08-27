@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Asmitha Explores Bookstore</title>
+    <meta name="theme-color" content="#764ba2">
+    <meta name="description" content="Meet Pavithra & Asmitha — a mom-teacher duo behind Asmitha Explores. Learn about our story, values and community of parents.">
+    <title>About Us – Asmitha Explores</title>
+
+    <!-- Refined, editorial typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" th:href="@{/css/styles.css}">
     <link rel="shortcut icon" type="image/png" th:href="@{/images/site-files/logo.png}">
     <link rel="icon" type="image/png" sizes="32x32" th:href="@{/images/site-files/logo.png}">
     <link rel="apple-touch-icon" th:href="@{/images/site-files/logo.png}">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="container">
                 <div class="logo">
-                    <a href="/" class="logo-link">
-                        <img th:src="@{/images/site-files/logo.png}" alt="Asmitha Explores" class="logo-img" onerror="this.style.display='none'">
+                    <a href="/" class="logo-link" aria-label="Asmitha Explores home">
+                        <img th:src="@{/images/site-files/logo.png}" alt="Asmitha Explores logo" class="logo-img" onerror="this.style.display='none'">
                         <span class="logo-text">
                             <span class="logo-name">Asmitha Explores</span>
-                            <span class="tagline">Learn. Play. Explore! 🌟</span>
+                            <span class="tagline">Learn · Play · Explore</span>
                         </span>
                     </a>
                 </div>
-                <ul class="nav-links">
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false">
+                    <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/>
+                    </svg>
+                    <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18L18 6"/>
+                    </svg>
+                </button>
+                <ul class="nav-links" id="primaryNav">
                     <li><a href="/">Home</a></li>
                     <li><a href="/#reviews">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -32,11 +50,11 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="about-hero">
             <div class="container">
-                <h1>About Asmitha Explores 🌟</h1>
-                <p class="lead">A mom, a teacher, and a growing community of little learners</p>
+                <h1>About Asmitha Explores</h1>
+                <p class="lead">A mom, a teacher, and a growing community of little learners.</p>
             </div>
         </section>
 
@@ -125,22 +143,22 @@
 
         <section class="about-preview" id="contact">
             <div class="container">
-                <h2>Contact Us</h2>
+                <h2>Get in Touch</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">📧</div>
+                        <div class="feature-icon" aria-hidden="true">📧</div>
                         <h3>Email</h3>
-                        <p>asmitha.explores@gmail.com</p>
+                        <p><a href="mailto:asmitha.explores@gmail.com">asmitha.explores@gmail.com</a></p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📱</div>
+                        <div class="feature-icon" aria-hidden="true">📱</div>
                         <h3>WhatsApp</h3>
-                        <p>+919445077125</p>
+                        <p><a href="https://wa.me/919445077125" target="_blank" rel="noopener">+91 94450 77125</a></p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🕒</div>
-                        <h3>Quick Response</h3>
-                        <p>We respond within 2 hours</p>
+                        <div class="feature-icon" aria-hidden="true">🕒</div>
+                        <h3>Quick Reply</h3>
+                        <p>Usually within 2 hours</p>
                     </div>
                 </div>
                 <!-- Social media handles -->
@@ -166,8 +184,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>📚 Asmitha Explores</h3>
-                    <p>Inspiring young minds through the magic of reading</p>
+                    <h3>Asmitha Explores</h3>
+                    <p>Inspiring young minds through the joy of learning.</p>
                     <div class="social-links">
                         <a href="https://www.youtube.com/@asmitha_explores" target="_blank" rel="noopener" class="social-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
@@ -192,9 +210,9 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <p>Email: asmitha.explores@gmail.com</p>
-                    <p>Phone: +919445077125</p>
+                    <h4>Reach Us</h4>
+                    <p>asmitha.explores@gmail.com</p>
+                    <p>+91 94450 77125</p>
                 </div>
             </div>
             <div class="footer-bottom">

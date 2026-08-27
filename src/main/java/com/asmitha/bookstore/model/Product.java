@@ -16,7 +16,12 @@ public class Product {
     private CustomizationInfo customization;
     private String category;
     private String ageGroup;
-    
+
+    /** Convention: when the first entry in {@link #images} ends with this filename
+     *  it is treated as a dedicated home-listing thumbnail and excluded from the
+     *  product detail slider. */
+    private static final String CARD_ICON_FILENAME = "/card-icon.jpg";
+
     // Nested classes for structured data
     public static class StockInfo {
         private String status;
@@ -155,18 +160,53 @@ public class Product {
         this.images = images;
     }
     
-    /*public String getImageUrl() {
-        return (images != null && !images.isEmpty()) ? images.get(0) : "/images/placeholder.jpg";
-    }*/
+    /**
+     * Returns the primary product image path as a relative URL. This is the
+     * first "real" (non card-icon) image — used for the detail page main image
+     * and for social sharing (OG/Twitter) meta tags.
+     */
     public String getImageUrl() {
-        String baseUrl = "https://asmitha-explores-bookstore.onrender.com";
-
-        if (images != null && !images.isEmpty()) {
-            return baseUrl + images.get(0);
-        }
-        return baseUrl + "/images/placeholder.jpg";
+        List<String> slider = getSliderImages();
+        if (!slider.isEmpty()) return slider.get(0);
+        // Fallback: only a card-icon exists with no product photos.
+        if (images != null && !images.isEmpty()) return images.get(0);
+        return "/images/placeholder.jpg";
     }
-    
+
+    // ── Card thumbnail (home listing) ──────────────────────────────────────
+
+    /** True when the images list starts with a card-icon.jpg entry. */
+    private boolean hasCardIconFirst() {
+        if (images == null || images.isEmpty()) return false;
+        String first = images.get(0);
+        return first != null && first.toLowerCase().endsWith(CARD_ICON_FILENAME);
+    }
+
+    /**
+     * Preferred thumbnail for home-page listing cards.
+     * By convention this is {@code images[0]} which is expected to be
+     * {@code .../card-icon.jpg}. Falls back to the first product image (or
+     * placeholder) when no card-icon has been added yet.
+     */
+    public String getCardImageUrl() {
+        if (images != null && !images.isEmpty()) {
+            return images.get(0);
+        }
+        return "/images/placeholder.jpg";
+    }
+
+    /**
+     * Images used by the product detail slider. If {@code images[0]} is a
+     * card-icon it is excluded so the slider only shows real product photos.
+     * When no card-icon is present the full list is returned.
+     */
+    public List<String> getSliderImages() {
+        if (images == null || images.isEmpty()) return new ArrayList<>();
+        return hasCardIconFirst()
+                ? new ArrayList<>(images.subList(1, images.size()))
+                : new ArrayList<>(images);
+    }
+
     public void setImageUrl(String imageUrl) {
         if (this.images == null) {
             this.images = new ArrayList<>();

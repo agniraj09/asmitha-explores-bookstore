@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.http.ResponseEntity;
@@ -40,6 +41,11 @@ public class HomeController {
         productService.getProductById(id).ifPresent(product ->
             model.addAttribute("product", product)
         );
+        // Absolute base URL of the current request (e.g. http://localhost:8080 or
+        // https://asmitha-explores-bookstore.onrender.com). Used to build absolute
+        // URLs for social-sharing meta tags (og:image, twitter:image, og:url).
+        String baseUrl = ServletUriComponentsBuilder.fromCurrentContextPath().build().toUriString();
+        model.addAttribute("baseUrl", baseUrl);
         return "product-detail";
     }
 

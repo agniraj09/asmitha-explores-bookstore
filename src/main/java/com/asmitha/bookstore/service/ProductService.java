@@ -106,7 +106,13 @@ public class ProductService {
             customization.setNotes((String) customData.get("notes"));
             product.setCustomization(customization);
         }
-        
+
+        // Card-icon convention: the FIRST entry in the images list is treated as
+        // the home-listing thumbnail (e.g. /images/products/{folder}/card-icon.jpg)
+        // and excluded from the product detail slider. See Product#getSliderImages
+        // and Product#getCardImageUrl. Configure per-product in products.yaml —
+        // no code change needed.
+
         return product;
     }
 
