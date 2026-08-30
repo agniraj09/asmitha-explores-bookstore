@@ -162,7 +162,7 @@ products:
     description: |
       <p>Learn Tamil vowels (உயிர் எழுத்துக்கள்) with our comprehensive flash card set!</p>
       <ul>
-        <li>Available in Hard Copy</li>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
         <li>Covers all 12 alphabets</li>
       </ul>
     price: 220
@@ -195,7 +195,7 @@ products:
     description: |
       <p>Learn Tamil vowels (மெய் எழுத்துக்கள்) with our comprehensive flash card set!</p>
       <ul>
-        <li>Available in Hard Copy</li>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
         <li>Covers all 18 alphabets</li>
       </ul>
     price: 280
@@ -261,9 +261,8 @@ products:
     description: |
       <p>Learn alphabets and phonics with our comprehensive flash card set!</p>
       <ul>
-        <li>Available in Hard Copy</li>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
         <li>Covers all 26 alphabets</li>
-        <li>Includes 2 short teaching reference videos</li>
         <li>Cards can be customized based on your theme - with additional charges</li>
       </ul>
     price: 300
@@ -295,11 +294,11 @@ products:
     ageGroup: "1"
 
   - id: "consonant-flash-cards"
-    name: "Consonant Blending & Diagraph Flash Cards"
+    name: "Consonant Blending & Digraph Flash Cards"
     description: |
       <p>Master consonant blending and digraph patterns with our comprehensive flash card set!</p>
       <ul>
-        <li>Available in Hard Copy</li>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
         <li>Covers consonant blends and digraphs</li>
         <li>30 A5 sized cards</li>
       </ul>
@@ -333,7 +332,10 @@ products:
     name: "Flags Flash Cards A to Z"
     description: |
       <p>Learn flags of countries with our comprehensive flash card set!</p>
-      <li>26 individual cards</li>
+      <ul>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
+        <li>26 individual cards</li>
+      </ul>
     price: 320
     currency: "INR"
     images:
@@ -362,7 +364,10 @@ products:
     name: "Wild & Domestic Animals Flash Cards"
     description: |
       <p>Learn wild and domestic animals with our comprehensive flash card set!</p>
-      <li>30 individual cards</li>
+      <ul>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
+        <li>30 individual cards</li>
+      </ul>
     price: 360
     currency: "INR"
     images:
@@ -391,7 +396,10 @@ products:
     name: "Birds Flash Cards"
     description: |
       <p>Learn birds with our comprehensive flash card set!</p>
-      <li>20 individual cards</li>
+      <ul>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
+        <li>20 individual cards</li>
+      </ul>
     price: 250
     currency: "INR"
     images:
@@ -420,7 +428,10 @@ products:
     name: "Flowers Flash Cards"
     description: |
       <p>Learn flowers with our comprehensive flash card set!</p>
-      <li>12 individual cards</li>
+      <ul>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
+        <li>12 individual cards</li>
+      </ul>
     price: 180
     currency: "INR"
     images:
@@ -449,7 +460,10 @@ products:
     name: "Parts of Body Flash Cards"
     description: |
       <p>Learn parts of body with our comprehensive flash card set!</p>
-      <li>20 individual cards</li>
+      <ul>
+        <li>Size - A5 Sheet Size Per Alphabet</li>
+        <li>20 individual cards</li>
+      </ul>
     price: 300
     currency: "INR"
     images:
