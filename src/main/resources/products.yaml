@@ -95,6 +95,38 @@ products:
     category: "Banners"
     ageGroup: "1"
 
+  - id: "jolly-phonics-sound-group-banner"
+    name: "Jolly Phonics - Sound Group - Banner"
+    description: |
+      <p>Learn alphabets and phonics with our comprehensive Jolly Phonics banner!</p>
+      <ul>
+        <li>Number of banners - 2</li>
+        <li>Size - Width - 4 feet(122 cm) / Height - 3 feet(92 cm)</li>
+        <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 1300
+    currency: "INR"
+    images:
+      - "/images/products/jolly-phonics-sound-group-banner/card-icon.jpg"
+      - "/images/products/jolly-phonics-sound-group-banner/1.jpg"
+      - "/images/products/jolly-phonics-sound-group-banner/2.jpg"
+      - "/images/products/jolly-phonics-sound-group-banner/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Phonics"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
   - id: "numbers-banner-1-50"
     name: "Numbers - Banner 1 to 50"
     description: |
