@@ -30,6 +30,37 @@ products:
     category: "Banners"
     ageGroup: "1"
 
+  - id: "uyir-eluthukkal-banner"
+    name: "Tamil Uyir Eluthukkal - Banner"
+    description: |
+      <p>Learn Tamil Uyir Eluthukkal with our comprehensive banner!</p>
+      <ul>
+        <li>Size - Width - 2.5 feet(76 cm) / Height - 3.5 feet(106 cm)</li>
+        <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 600
+    currency: "INR"
+    images:
+      - "/images/products/uyir-eluthukkal-banner/card-icon.jpg"
+      - "/images/products/uyir-eluthukkal-banner/1.jpg"
+      - "/images/products/uyir-eluthukkal-banner/2.jpg"
+      - "/images/products/uyir-eluthukkal-banner/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Tamil"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
   - id: "flash-card-banner"
     name: "Phonics Flash Cards - Banner"
     description: |
