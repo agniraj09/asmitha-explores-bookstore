@@ -30,6 +30,37 @@ products:
     category: "Banners"
     ageGroup: "1"
 
+  - id: "uyir-mei-eluthukkal-table-banner"
+    name: "Tamil Uyir Mei Eluthukkal Table - Banner"
+    description: |
+      <p>Learn Tamil Uyir & Mei Eluthukkal with our comprehensive banner!</p>
+      <ul>
+        <li>Size - Width - 4 feet(122 cm) / Height - 3 feet(92 cm)</li>
+        <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 650
+    currency: "INR"
+    images:
+      - "/images/products/uyir-mei-eluthukkal-table-banner/card-icon.jpg"
+      - "/images/products/uyir-mei-eluthukkal-table-banner/1.jpg"
+      - "/images/products/uyir-mei-eluthukkal-table-banner/2.jpg"
+      - "/images/products/uyir-mei-eluthukkal-table-banner/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Tamil"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
   - id: "uyir-eluthukkal-banner"
     name: "Tamil Uyir Eluthukkal - Banner"
     description: |
