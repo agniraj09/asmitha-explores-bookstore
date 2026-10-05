@@ -250,6 +250,37 @@ products:
     category: "Banners"
     ageGroup: "1"
 
+  - id: "maths-multiplication-table-1-10-banner"
+    name: "Maths Multiplication Table 1 to 10 - Banner"
+    description: |
+      <p>Learn multiplication tables with our high quality banner!</p>
+      <ul>
+          <li>Size - Width - 5 feet(152 cm) / Height - 2 feet(61 cm)</li>
+          <li>Made of 1st quality banner material for long lasting usage</li>
+      </ul>
+    price: 750
+    currency: "INR"
+    images:
+      - "/images/products/maths-multiplication-table-1-10-banner/card-icon.jpg"
+      - "/images/products/maths-multiplication-table-1-10-banner/1.jpg"
+      - "/images/products/maths-multiplication-table-1-10-banner/2.jpg"
+      - "/images/products/maths-multiplication-table-1-10-banner/3.jpg"
+    tags:
+      - "New Arrival"
+      - "Numbers"
+      - "Banner"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: false
+    category: "Banners"
+    ageGroup: "1"
+
   - id: "tamil-uyir-eluthukkal-flash-cards"
     name: "Tamil Uyir Eluthukkal Flash Cards"
     description: |
