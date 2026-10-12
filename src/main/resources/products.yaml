@@ -312,6 +312,34 @@ products:
     category: "Banners"
     ageGroup: "1"
 
+  - id: "tamil-phonics-book"
+    name: "Tamil Phonics Book"
+    description: |
+      <p>Learn Tamil phonics with our comprehensive book!</p>
+      <ul>
+        <li>56 Pages</li>
+      </ul>
+    price: 599
+    currency: "INR"
+    images:
+      - "/images/products/tamil-phonics-book/card-icon.jpg"
+      - "/images/products/tamil-phonics-book/1.jpg"
+    tags:
+      - "New Arrival"
+      - "Books"
+      - "Tamil"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+    category: "Learning Books"
+    ageGroup: "1"
+
   - id: "tamil-uyir-eluthukkal-flash-cards"
     name: "Tamil Uyir Eluthukkal Flash Cards"
     description: |
