@@ -345,6 +345,37 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
+  - id: "tamil-uyir-mei-eluthukkal-flash-cards"
+    name: "Tamil Uyir Mei Eluthukkal Flash Cards"
+    description: |
+      <p>Learn Tamil letters (உயிர் மெய் எழுத்துக்கள்) with our comprehensive flash card set!</p>
+      <ul>
+        <li>Size - A4 Sheet Size</li>
+        <li>12 Cards</li>
+        <li>Covers all 246 alphabets</li>
+      </ul>
+    price: 360
+    currency: "INR"
+    images:
+      - "/images/products/tamil-uyir-mei-eluthukkal-flash-cards/card-icon.jpg"
+      - "/images/products/tamil-uyir-mei-eluthukkal-flash-cards/1.jpg"
+      - "/images/products/tamil-uyir-mei-eluthukkal-flash-cards/2.jpg"
+    tags:
+      - "New Arrival"
+      - "Flash Cards"
+      - "Tamil"
+    stock:
+      status: "IN_STOCK"
+      quantity: 50
+    shipping:
+      applicable: true
+      charges: 50
+      notes: "No delivery charges for Tamilnadu. Delivery Charges Applicable Outside Tamilnadu"
+    customization:
+      available: true
+    category: "Flash Cards"
+    ageGroup: "1"
+
   - id: "tamil-mei-eluthukkal-flash-cards"
     name: "Tamil Mei Eluthukkal Flash Cards"
     description: |
