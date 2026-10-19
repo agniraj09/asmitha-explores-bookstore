@@ -409,8 +409,8 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
-  - id: "tamil-uyir-mei-eluthukkal-flash-cards"
-    name: "Tamil Uyir Mei Eluthukkal Flash Cards"
+  - id: "tamil-uyir-mei-eluthukkal-a4-flash-cards"
+    name: "Tamil Uyir Mei Eluthukkal A4 Flash Cards"
     description: |
       <p>Learn Tamil letters (உயிர் மெய் எழுத்துக்கள்) with our comprehensive flash card set!</p>
       <ul>
@@ -418,7 +418,7 @@ products:
         <li>12 Cards</li>
         <li>Covers all 246 alphabets</li>
       </ul>
-    price: 360
+    price: 380
     currency: "INR"
     images:
       - "/images/products/tamil-uyir-mei-eluthukkal-flash-cards/card-icon.jpg"
@@ -650,7 +650,7 @@ products:
         <li>Size - A5 cards</li>
         <li>26 cards</li>
       </ul>
-    price: 360
+    price: 380
     currency: "INR"
     images:
       - "/images/products/chess-flash-cards/card-icon.jpg"
