@@ -889,30 +889,30 @@ products:
     category: "Flash Cards"
     ageGroup: "1"
 
-  - id: "having-fun-with-phonics-book"
-    name: "Having Fun With Phonics"
-    description: "Make phonics learning fun with engaging activities and colorful illustrations."
-    price: 199
-    currency: "INR"
-    images:
-      - "/images/products/having-fun-with-phonics/1.jpg"
-      - "/images/products/having-fun-with-phonics/2.jpg"
-      - "/images/products/having-fun-with-phonics/3.jpg"
-      - "/images/products/having-fun-with-phonics/4.jpg"
-    tags:
-      - "Phonics"
-      - "Reading"
-    stock:
-      status: "IN_STOCK"
-      quantity: 40
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-    customization:
-      available: false
-    category: "Learning Books"
-    ageGroup: "1"
+#  - id: "having-fun-with-phonics-book"
+#    name: "Having Fun With Phonics"
+#    description: "Make phonics learning fun with engaging activities and colorful illustrations."
+#    price: 199
+#    currency: "INR"
+#    images:
+#      - "/images/products/having-fun-with-phonics/1.jpg"
+#      - "/images/products/having-fun-with-phonics/2.jpg"
+#      - "/images/products/having-fun-with-phonics/3.jpg"
+#      - "/images/products/having-fun-with-phonics/4.jpg"
+#    tags:
+#      - "Phonics"
+#      - "Reading"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 40
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Learning Books"
+#    ageGroup: "1"
 
   - id: "cursive-writing-level-1-book"
     name: "Cursive Writing Level 1 Book"
@@ -1013,78 +1013,78 @@ products:
     category: "Learning Books"
     ageGroup: "1"
 
-  - id: "bed-time-story-penguin-book"
-    name: "Bed Time Story Book - Penguin Theme"
-    description: "Delightful bedtime stories featuring adorable penguin characters to help kids wind down."
-    price: 100
-    currency: "INR"
-    images:
-      - "/images/products/toy-story-books/penguin-1.jpg"
-      - "/images/products/toy-story-books/penguin-2.jpg"
-      - "/images/products/toy-story-books/penguin-3.jpg"
-    tags:
-      - "Bedtime Stories"
-      - "Penguin"
-    stock:
-      status: "IN_STOCK"
-      quantity: 30
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-    customization:
-      available: false
-    category: "Story Books"
-    ageGroup: "1"
-
-  - id: "bed-time-story-giraffe-book"
-    name: "Bed Time Story Book - Giraffe Theme"
-    description: "Gentle bedtime stories with giraffe adventures perfect for a peaceful night's sleep."
-    price: 100
-    currency: "INR"
-    images:
-      - "/images/products/toy-story-books/giraffe-1.jpg"
-      - "/images/products/toy-story-books/giraffe-2.jpg"
-      - "/images/products/toy-story-books/giraffe-3.jpg"
-    tags:
-      - "Bedtime Stories"
-      - "Giraffe"
-    stock:
-      status: "IN_STOCK"
-      quantity: 30
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-    customization:
-      available: false
-    category: "Story Books"
-    ageGroup: "1"
-
-  - id: "bed-time-story-rabbit-book"
-    name: "Bed Time Story Book - Rabbit Theme"
-    description: "Exciting yet soothing bedtime stories featuring cute rabbit characters."
-    price: 100
-    currency: "INR"
-    images:
-      - "/images/products/toy-story-books/rabbit-1.jpg"
-      - "/images/products/toy-story-books/rabbit-2.jpg"
-      - "/images/products/toy-story-books/rabbit-3.jpg"
-    tags:
-      - "New Arrival"
-      - "Bedtime Stories"
-      - "Rabbit"
-    stock:
-      status: "IN_STOCK"
-      quantity: 30
-    shipping:
-      applicable: true
-      charges: 50
-      notes: "Delivery Charges Applicable for Outside Tamilnadu"
-    customization:
-      available: false
-    category: "Story Books"
-    ageGroup: "1"
+#  - id: "bed-time-story-penguin-book"
+#    name: "Bed Time Story Book - Penguin Theme"
+#    description: "Delightful bedtime stories featuring adorable penguin characters to help kids wind down."
+#    price: 100
+#    currency: "INR"
+#    images:
+#      - "/images/products/toy-story-books/penguin-1.jpg"
+#      - "/images/products/toy-story-books/penguin-2.jpg"
+#      - "/images/products/toy-story-books/penguin-3.jpg"
+#    tags:
+#      - "Bedtime Stories"
+#      - "Penguin"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 30
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Story Books"
+#    ageGroup: "1"
+#
+#  - id: "bed-time-story-giraffe-book"
+#    name: "Bed Time Story Book - Giraffe Theme"
+#    description: "Gentle bedtime stories with giraffe adventures perfect for a peaceful night's sleep."
+#    price: 100
+#    currency: "INR"
+#    images:
+#      - "/images/products/toy-story-books/giraffe-1.jpg"
+#      - "/images/products/toy-story-books/giraffe-2.jpg"
+#      - "/images/products/toy-story-books/giraffe-3.jpg"
+#    tags:
+#      - "Bedtime Stories"
+#      - "Giraffe"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 30
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Story Books"
+#    ageGroup: "1"
+#
+#  - id: "bed-time-story-rabbit-book"
+#    name: "Bed Time Story Book - Rabbit Theme"
+#    description: "Exciting yet soothing bedtime stories featuring cute rabbit characters."
+#    price: 100
+#    currency: "INR"
+#    images:
+#      - "/images/products/toy-story-books/rabbit-1.jpg"
+#      - "/images/products/toy-story-books/rabbit-2.jpg"
+#      - "/images/products/toy-story-books/rabbit-3.jpg"
+#    tags:
+#      - "New Arrival"
+#      - "Bedtime Stories"
+#      - "Rabbit"
+#    stock:
+#      status: "IN_STOCK"
+#      quantity: 30
+#    shipping:
+#      applicable: true
+#      charges: 50
+#      notes: "Delivery Charges Applicable for Outside Tamilnadu"
+#    customization:
+#      available: false
+#    category: "Story Books"
+#    ageGroup: "1"
 
 #  - id: "1001-words-in-pictures-book"
 #    name: "1001 Words in Pictures"
@@ -1230,7 +1230,7 @@ metadata:
     - "Flash Cards"
     - "Banners"
     - "Learning Books"
-    - "Story Books"
+#    - "Story Books"
   ageGroups:
     - "1"
 
